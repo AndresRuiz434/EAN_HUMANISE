@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elementos</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <!-- Flecha atrás -->
+  <button class="back" onclick="history.back()">←</button>
+
+  <!-- Títulos -->
+  <div class="header-center">
+    <h1 id="tituloProyecto"></h1>
+    <h2 id="tituloSeccion"></h2>
+  </div>
+
+  <!-- Logo -->
+  <div class="header-right">
+    <img src="assets/img/LogoB.png" class="logo">
+  </div>
+</header>
+
+
+
+<!-- BUSCADOR -->
+<div class="buscador">
+  <input
+    type="text"
+    id="buscador"
+    placeholder="Buscar por ID, sección o plano..."
+  />
+</div>
+
+<!--Selector-->  
+<div class="selector-elemento">
+  <select id="selectElemento">
+    <option value="">Seleccione un elemento</option>
+  </select>
+</div>
+
+
+<!-- DETALLE -->
+<div id="detalle" class="detalle">
+  <p class="muted">Seleccione un elemento</p>
+</div>
+
+<!-- SELECTOR GRAFICA -->
+<div class="selector-grafica">
+  <select id="tipoGrafica">
+    <option value="volumen">Volumen vs proyecto</option>
+    <option value="peso">Peso refuerzo vs proyecto</option>
+  </select>
+</div>
+
+<!-- GRAFICA -->
+<canvas id="grafica" height="220"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script src="js/elementos.js"></script>
+
+<script src="js/login.js"></script>
+<script>
+  protegerPagina();
+</script>
+
+
+</body>
+</html>

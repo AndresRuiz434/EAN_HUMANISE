@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <!-- Flecha atrás -->
+  <button class="back" onclick="history.back()">←</button>
+
+  <!-- Títulos -->
+  <div class="header-center">
+    <h1 id="tituloProyecto"></h1>
+    <h2 id="tituloSeccion">PLANOS</h2>
+  </div>
+
+  <!-- Logo -->
+  <div class="header-right">
+    <img src="assets/img/LogoB.png" class="logo">
+  </div>
+</header>
+
+
+<section class="contenido">
+
+  <p class="label">Seleccione el plano</p>
+
+  <!-- SELECTOR -->
+  <select id="selectorPlanos">
+    <option value="">Seleccione un plano</option>
+  </select>
+
+  <!-- INFO -->
+  <div id="infoPlano" class="info-card">
+    <p class="muted">Seleccione un plano</p>
+  </div>
+
+  <!-- VISOR PDF -->
+  <div class="pdf-container">
+    <iframe id="visorPDF"></iframe>
+
+    <button class="btn-full" onclick="abrirPDFCompleto()">
+      Ver en pantalla completa
+    </button>
+  </div>
+
+
+</section>
+
+<script src="js/planos.js"></script>
+
+<script src="js/login.js"></script>
+<script>
+  protegerPagina();
+</script>
+
+</body>
+</html>

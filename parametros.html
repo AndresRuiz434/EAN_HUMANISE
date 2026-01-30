@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parámetros de Diseño</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <!-- Flecha atrás -->
+  <button class="back" onclick="history.back()">←</button>
+
+  <!-- Títulos -->
+  <div class="header-center">
+    <h1 id="tituloProyecto"></h1>
+    <h2 id="tituloSeccion">PARÁMETROS DE DISEÑO</h2>
+  </div>
+
+  <!-- Logo -->
+  <div class="header-right">
+    <img src="assets/img/LogoB.png" class="logo">
+  </div>
+</header>
+
+  <main class="contenedor">
+
+    <!-- PARAMETROS -->
+    <section class="bloque">
+      <h3>Parámetros generales</h3>
+        <div class="tabla-contenedor">
+            <table id="tablaParametros">
+                <tbody>
+                    <!-- JS -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- MATERIALES -->
+    <section class="bloque">
+      <h3>Materiales</h3>
+        <div class="tabla-contenedor"></div>
+            <table id="tablaMateriales">
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Resistencia (kg/cm²)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <!-- JS -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto">
+      <a id="btnWhatsapp" target="_blank" class="btn-whatsapp">
+        Contactar por WhatsApp
+      </a>
+
+      <a id="btnCorreo" class="btn-correo">
+         Contactar por correo
+      </a>
+
+    </section>
+
+  </main>
+
+  <script src="js/parametros.js"></script>
+
+<script src="js/login.js"></script>
+<script>
+  protegerPagina();
+</script>
+
+</body>
+</html>

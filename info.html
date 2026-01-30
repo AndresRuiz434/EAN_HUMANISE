@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parámetros de Diseño</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <!-- Flecha atrás -->
+  <button class="back" onclick="history.back()">←</button>
+
+  <!-- Títulos -->
+  <div class="header-center">
+    <h1 id="tituloProyecto"></h1>
+    <h2 id="tituloSeccion">INFORMACIÓN ADICIONAL</h2>
+  </div>
+
+  <!-- Logo -->
+  <div class="header-right">
+    <img src="assets/img/LogoB.png" class="logo">
+  </div>
+</header>
+
+<section class="info-adicional">
+
+  <a id="btnBIM" class="btn bim" target="_blank" rel="noopener noreferrer" >
+    Ver modelo 3D (BIM Construction Cloud)
+  </a>
+
+    <h3>Video del proceso constructivo</h3>
+
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/UylsSOIIRC0"
+            title="Proceso constructivo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<script src="js/info.js"></script>
+
+<script src="js/login.js"></script>
+<script>
+  protegerPagina();
+</script>
+
+</body>
+</html>
+

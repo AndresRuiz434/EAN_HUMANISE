@@ -1,0 +1,4283 @@
+
+{
+  "info": {
+    "proyecto": "AE-0466 EAN HUMANISE STUDIO",
+    "bim": "https://acc.autodesk.eu/docs/files/projects/6cb70048-7a2f-4420-8a2a-c6e0177b40f9?folderUrn=urn%3Aadsk.wipemea%3Afs.folder%3Aco.x2Ja1ltGSmCRYUaFnslmHw&entityId=urn%3Aadsk.wipemea%3Adm.lineage%3A2_e9HEhwTeC9W0M2SStAWg&viewModel=detail&moduleId=folders&viewableGuid=c4315ec3-c31e-1476-b281-bd5e22204769."
+  },
+  "planos": [
+    {
+      "plano": "Plano",
+      "numero": "Número",
+      "version": null,
+      "fecha": null,
+      "contenido": "Contenido",
+      "pdf": "Plano.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-601-1.00",
+      "numero": "1",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "ESQUEMA 3D Y ESPECIFICACIONES",
+      "pdf": "EAN-0519-AES-01-EST-PL-601-1.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-201-01.01",
+      "numero": "1.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTE ESQUEMATICO E INDICE DE PLANOS",
+      "pdf": "EAN-0519-AES-01-EST-PL-201-01.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-501-01.02",
+      "numero": "1.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DETALLE GENERALES",
+      "pdf": "EAN-0519-AES-01-EST-PL-501-01.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-502-01.03",
+      "numero": "1.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DETALLE GENERALES",
+      "pdf": "EAN-0519-AES-01-EST-PL-502-01.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-101-02.00",
+      "numero": "2",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA LOCALIZACIÓN DE PILOTES",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-101-02.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-503-02.01",
+      "numero": "2.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE PANTALLAS",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-503-02.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-504-02.02",
+      "numero": "2.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE PILOTES",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-504-02.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-505-02.03",
+      "numero": "2.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE PILOTES CONSTRUCTIVOS",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-505-02.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-506-02.04",
+      "numero": "2.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE BARRETES",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-506-02.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-507-02.05",
+      "numero": "2.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE BARRETES",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-507-02.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-202-03.00",
+      "numero": "3",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 1",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-202-03.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-203-03.01",
+      "numero": "3.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 2",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-203-03.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-204-03.02",
+      "numero": "3.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 3",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-204-03.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-205-03.03",
+      "numero": "3.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 4",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-205-03.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-206-03.04",
+      "numero": "3.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 5",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-206-03.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-207-03.05",
+      "numero": "3.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 6",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-207-03.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-208-03.06",
+      "numero": "3.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 7",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-208-03.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-209-03.07",
+      "numero": "3.07",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 8",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-209-03.07.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-210-03.08",
+      "numero": "3.08",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 9",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-210-03.08.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-211-03.09",
+      "numero": "3.09",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 10",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-211-03.09.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-212-03.10",
+      "numero": "3.1",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 11",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-212-03.10.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-213-03.11",
+      "numero": "3.11",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "SECUENCIA PROCESO CONSTRUCTIVO PASO 12",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-213-03.11.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-102-04.00",
+      "numero": "4",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA LOCALIZACION DE MUROS Y COLUMNAS",
+      "pdf": "EAN-0519-AES-01-EST-PL-102-04.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-508-04.01",
+      "numero": "4.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE COLUMNAS",
+      "pdf": "EAN-0519-AES-01-EST-PL-508-04.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-509-04.02",
+      "numero": "4.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE COLUMNAS",
+      "pdf": "EAN-0519-AES-01-EST-PL-509-04.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-510-04.03",
+      "numero": "4.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE COLUMNAS",
+      "pdf": "EAN-0519-AES-01-EST-PL-510-04.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-511-04.04",
+      "numero": "4.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE COLUMNAS",
+      "pdf": "EAN-0519-AES-01-EST-PL-511-04.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-512-04.05",
+      "numero": "4.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE  MURO TIPO 1",
+      "pdf": "EAN-0519-AES-01-EST-PL-512-04.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-513-04.06",
+      "numero": "4.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE MURO TIPO 2",
+      "pdf": "EAN-0519-AES-01-EST-PL-513-04.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-514-04.07",
+      "numero": "4.07",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE MUROS TIPO 3 Y 4",
+      "pdf": "EAN-0519-AES-01-EST-PL-514-04.07.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-515-05.00",
+      "numero": "5",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DETALLES DEL ANFITEATRO",
+      "pdf": "EAN-0519-AES-01-EST-PL-515-05.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-516-05.01",
+      "numero": "5.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DETALLES DEL ANFITEATRO",
+      "pdf": "EAN-0519-AES-01-EST-PL-516-05.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-103-06.00",
+      "numero": "6",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE CIMENTACIÓN",
+      "pdf": "EAN-0519-AES-01-EST-PL-103-06.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-517-06.01",
+      "numero": "6.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "ESQUEMAS 3D CIMENTACIÓN",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-517-06.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-518-06.02",
+      "numero": "6.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES Y ESQUEMAS 3D",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-518-06.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-519-06.03",
+      "numero": "6.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS DE CIMENTACIÓN",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-519-06.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-520-06.04",
+      "numero": "6.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS DE CIMENTACIÓN",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-520-06.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-521-06.05",
+      "numero": "6.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS DE CIMENTACIÓN",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-521-06.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-522-06.06",
+      "numero": "6.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS DE CIMENTACIÓN",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-522-06.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-523-06.07",
+      "numero": "6.07",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS DE CIMENTACIÓN",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-523-06.07.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-524-06.08",
+      "numero": "6.08",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE DADOS",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-524-06.08.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-525-06.09",
+      "numero": "6.09",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE DADOS",
+      "pdf": "EAN-0519-AES-01-EST-CIM-PL-525-06.09.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-104-07.00",
+      "numero": "7",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE PISO 1 ETAPA 1 (ANILLO)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-104-07.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-105-07.02",
+      "numero": "7.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES Y ESQUEMA 3D PISO 1 ETAPA 1 (ANILLO)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-105-07.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-106-07.04",
+      "numero": "7.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE PISO 1 ETAPA 2 (COMPLEMENTO)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-106-07.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-107-07.06",
+      "numero": "7.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES Y ESQUEMA 3D PISO 1 ETAPA 2 (COMPLEMENTO)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-107-07.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-108-07.08",
+      "numero": "7.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE PISO 1 ETAPA 3 (DEMOLICIÓN)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-108-07.08.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-526-07.01",
+      "numero": "7.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES Y ESQUEMA 3D PISO 1 ETAPA 3 (DEMOLICIÓN)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-526-07.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-527-07.03",
+      "numero": "7.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE PISO 1 ETAPA 4 (COMPLEMENTO ANFITEATRO)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-527-07.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-528-07.05",
+      "numero": "7.07",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES Y ESQUEMA 3D PISO 1 ETAPA 4 (COMPLEMENTO ANFITEATRO)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-528-07.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-529-07.07",
+      "numero": "7.08",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE PISO 1 ETAPA 5 (DEFINITIVA)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-529-07.07.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-530-07.09",
+      "numero": "7.09",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES Y ESQUEMA 3D PISO 1 (DEFINITIVA)",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-530-07.09.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-531-07.10",
+      "numero": "7.1",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS PISO 1",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-531-07.10.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-532-07.11",
+      "numero": "7.11",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS PISO 1",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-532-07.11.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-533-07.12",
+      "numero": "7.12",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS PISO 1",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-533-07.12.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-534-07.13",
+      "numero": "7.13",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS PISO 1",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-534-07.13.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-535-07.14",
+      "numero": "7.14",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS PISO 1",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-535-07.14.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-536-07.15",
+      "numero": "7.15",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS PISO 1",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-536-07.15.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N01-PL-537-07.16",
+      "numero": "7.16",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES DE VIGAS PISO 1",
+      "pdf": "EAN-0519-AES-01-EST-N01-PL-537-07.16.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N02-PL-109-08.00",
+      "numero": "8",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-N02-PL-109-08.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N02-PL-538-08.01",
+      "numero": "8.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-N02-PL-538-08.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N02-PL-539-08.02",
+      "numero": "8.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "ESQUEMAS 3D PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-N02-PL-539-08.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N02-PL-540-08.03",
+      "numero": "8.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-N02-PL-540-08.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N02-PL-541-08.04",
+      "numero": "8.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-N02-PL-541-08.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N02-PL-542-08.05",
+      "numero": "8.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-N02-PL-542-08.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N02-PL-543-08.06",
+      "numero": "8.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-N02-PL-543-08.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N03-PL-110-09.00",
+      "numero": "9",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA PISO 3",
+      "pdf": "EAN-0519-AES-01-EST-N03-PL-110-09.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N03-PL-544-09.01",
+      "numero": "9.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES PISO 3",
+      "pdf": "EAN-0519-AES-01-EST-N03-PL-544-09.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N03-PL-545-09.02",
+      "numero": "9.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "ESQUEMAS 3D PISO 3",
+      "pdf": "EAN-0519-AES-01-EST-N03-PL-545-09.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N03-PL-546-09.03",
+      "numero": "9.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS  PISO 3",
+      "pdf": "EAN-0519-AES-01-EST-N03-PL-546-09.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N03-PL-547-09.04",
+      "numero": "9.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 3",
+      "pdf": "EAN-0519-AES-01-EST-N03-PL-547-09.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N03-PL-548-09.05",
+      "numero": "9.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 3",
+      "pdf": "EAN-0519-AES-01-EST-N03-PL-548-09.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N03-PL-549-09.06",
+      "numero": "9.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 3",
+      "pdf": "EAN-0519-AES-01-EST-N03-PL-549-09.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N04-PL-111-10.00",
+      "numero": "10",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-N04-PL-111-10.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N04-PL-550-10.01",
+      "numero": "10.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES  PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-N04-PL-550-10.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N04-PL-551-10.02",
+      "numero": "10.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "ESQUEMAS 3D PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-N04-PL-551-10.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N04-PL-552-10.03",
+      "numero": "10.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-N04-PL-552-10.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N04-PL-553-10.04",
+      "numero": "10.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-N04-PL-553-10.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N04-PL-554-10.05",
+      "numero": "10.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-N04-PL-554-10.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N04-PL-555-10.06",
+      "numero": "10.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-N04-PL-555-10.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N05-PL-112-11.00",
+      "numero": "11",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE PISO 5",
+      "pdf": "EAN-0519-AES-01-EST-N05-PL-112-11.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N05-PL-556-11.01",
+      "numero": "11.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES  PISO 5",
+      "pdf": "EAN-0519-AES-01-EST-N05-PL-556-11.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N05-PL-557-11.02",
+      "numero": "11.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "ESQUEMAS 3D PISO 5",
+      "pdf": "EAN-0519-AES-01-EST-N05-PL-557-11.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N05-PL-558-11.03",
+      "numero": "11.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 5",
+      "pdf": "EAN-0519-AES-01-EST-N05-PL-558-11.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N05-PL-559-11.04",
+      "numero": "11.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 5",
+      "pdf": "EAN-0519-AES-01-EST-N05-PL-559-11.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N05-PL-560-11.05",
+      "numero": "11.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 5",
+      "pdf": "EAN-0519-AES-01-EST-N05-PL-560-11.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N05-PL-561-11.06",
+      "numero": "11.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 5",
+      "pdf": "EAN-0519-AES-01-EST-N05-PL-561-11.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N06-PL-113-12.00",
+      "numero": "12",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE PISO 6",
+      "pdf": "EAN-0519-AES-01-EST-N06-PL-113-12.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N06-PL-562-12.01",
+      "numero": "12.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES  PISO 6",
+      "pdf": "EAN-0519-AES-01-EST-N06-PL-562-12.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N06-PL-563-12.02",
+      "numero": "12.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "ESQUEMAS 3D PISO 6",
+      "pdf": "EAN-0519-AES-01-EST-N06-PL-563-12.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N06-PL-564-12.03",
+      "numero": "12.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 6",
+      "pdf": "EAN-0519-AES-01-EST-N06-PL-564-12.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N06-PL-565-12.04",
+      "numero": "12.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 6",
+      "pdf": "EAN-0519-AES-01-EST-N06-PL-565-12.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N06-PL-566-12.05",
+      "numero": "12.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 6",
+      "pdf": "EAN-0519-AES-01-EST-N06-PL-566-12.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N06-PL-567-12.06",
+      "numero": "12.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 6",
+      "pdf": "EAN-0519-AES-01-EST-N06-PL-567-12.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N07-PL-114-13.00",
+      "numero": "13",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE PISO 7",
+      "pdf": "EAN-0519-AES-01-EST-N07-PL-114-13.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N07-PL-568-13.01",
+      "numero": "13.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES  PISO 7",
+      "pdf": "EAN-0519-AES-01-EST-N07-PL-568-13.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N07-PL-569-13.02",
+      "numero": "13.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "ESQUEMAS 3D PISO 7",
+      "pdf": "EAN-0519-AES-01-EST-N07-PL-569-13.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N07-PL-570-13.03",
+      "numero": "13.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 7",
+      "pdf": "EAN-0519-AES-01-EST-N07-PL-570-13.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N07-PL-571-13.04",
+      "numero": "13.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 7",
+      "pdf": "EAN-0519-AES-01-EST-N07-PL-571-13.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-N07-PL-572-13.05",
+      "numero": "13.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS PISO 7",
+      "pdf": "EAN-0519-AES-01-EST-N07-PL-572-13.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CUB-PL-115-14.00",
+      "numero": "14",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE CUBIERTA",
+      "pdf": "EAN-0519-AES-01-EST-CUB-PL-115-14.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CUB-PL-573-14.01",
+      "numero": "14.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES  Y ESQUEMAS 3D CUBIERTA",
+      "pdf": "EAN-0519-AES-01-EST-CUB-PL-573-14.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CUB-PL-574-14.02",
+      "numero": "14.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE LOCALIZACIÓN DE PUNTOS DE ANCLAJE Y DUCTOS DE CUBIERTA",
+      "pdf": "EAN-0519-AES-01-EST-CUB-PL-574-14.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CUB-PL-575-14.03",
+      "numero": "14.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS CUBIERTA",
+      "pdf": "EAN-0519-AES-01-EST-CUB-PL-575-14.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CUB-PL-576-14.04",
+      "numero": "14.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS CUBIERTA",
+      "pdf": "EAN-0519-AES-01-EST-CUB-PL-576-14.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CUB-PL-577-14.05",
+      "numero": "14.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS CUBIERTA",
+      "pdf": "EAN-0519-AES-01-EST-CUB-PL-577-14.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-CUB-PL-578-14.06",
+      "numero": "14.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA Y CORTES ASCENSOR MONTALIBROS",
+      "pdf": "EAN-0519-AES-01-EST-CUB-PL-578-14.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-SCU-PL-116-15.00",
+      "numero": "15",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA DE CUBIERTA DE MÁQUINAS",
+      "pdf": "EAN-0519-AES-01-EST-SCU-PL-116-15.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-SCU-PL-579-15.01",
+      "numero": "15.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES Y ESQUEMA 3D CUBIERTA DE MAQUINAS",
+      "pdf": "EAN-0519-AES-01-EST-SCU-PL-579-15.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-SCU-PL-580-15.02",
+      "numero": "15.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE VIGAS DE CUBIERTA DE MAQUINAS",
+      "pdf": "EAN-0519-AES-01-EST-SCU-PL-580-15.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-B2-PL-118-16.00",
+      "numero": "16",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA TANQUE DE AGUA",
+      "pdf": "EAN-0519-AES-01-EST-B2-PL-118-16.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-B2-PL-581-16.01",
+      "numero": "16.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES TANQUE DE AGUA",
+      "pdf": "EAN-0519-AES-01-EST-B2-PL-581-16.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-B2-PL-582-16.02",
+      "numero": "16.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECES VIGAS DE CIMENTACIÓN TANQUE DE AGUA",
+      "pdf": "EAN-0519-AES-01-EST-B2-PL-582-16.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-B2-PL-583-16.03",
+      "numero": "16.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PLANTA Y CORTES TANQUE DE AGUA ENTRE EJES 1-2",
+      "pdf": "EAN-0519-AES-01-EST-B2-PL-583-16.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-B2-PL-584-16.04",
+      "numero": "16.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "PCORTES TANQUE DE AGUA ENTRE EJES 1-2",
+      "pdf": "EAN-0519-AES-01-EST-B2-PL-584-16.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-B2-PL-585-16.05",
+      "numero": "16.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES TANQUE DE AGUA",
+      "pdf": "EAN-0519-AES-01-EST-B2-PL-585-16.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-B2-PL-586-16.06",
+      "numero": "16.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "CORTES TANQUE DE AGUA",
+      "pdf": "EAN-0519-AES-01-EST-B2-PL-586-16.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-B2-PL-587-16.07",
+      "numero": "16.07",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "POZO EYECTOR TIPO 1",
+      "pdf": "EAN-0519-AES-01-EST-B2-PL-587-16.07.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-588-16.08",
+      "numero": "16.08",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "POZO EYECTOR TIPO 2",
+      "pdf": "EAN-0519-AES-01-EST-PL-588-16.08.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-589-16.08",
+      "numero": "16.08",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "POZO EYECTOR TIPO 3",
+      "pdf": "EAN-0519-AES-01-EST-PL-589-16.08.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-588-17.00",
+      "numero": "17",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 1 DE CIMENTACIÓN A PISO 1",
+      "pdf": "EAN-0519-AES-01-EST-PL-588-17.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-589-17.01",
+      "numero": "17.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 1 DE CIMENTACIÓN A PISO 1",
+      "pdf": "EAN-0519-AES-01-EST-PL-589-17.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-591-17.03",
+      "numero": "17.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 1 DE PISO 1 A PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-PL-591-17.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-592-17.04",
+      "numero": "17.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 1 DE PISO 1 A PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-PL-592-17.04.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-593-17.05",
+      "numero": "17.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 1 TÍPICA PISOS (2 Y 4 A CUBIERTA)",
+      "pdf": "EAN-0519-AES-01-EST-PL-593-17.05.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-594-17.06",
+      "numero": "17.05",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 1 TÍPICA PISOS (2 Y 4 A CUBIERTA)",
+      "pdf": "EAN-0519-AES-01-EST-PL-594-17.06.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-595-17.02",
+      "numero": "17.06",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 1 DE PISO 3 A PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-PL-595-17.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-595-17.07",
+      "numero": "17.07",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 1 DE PISO 3 A PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-PL-595-17.07.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-596-17.08",
+      "numero": "17.08",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 2 PISO 1 A PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-PL-596-17.08.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-597-17.09",
+      "numero": "17.09",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 2 PISO 1 A PISO 2",
+      "pdf": "EAN-0519-AES-01-EST-PL-597-17.09.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-598-17.10",
+      "numero": "17.1",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 2 TÍPICA PISOS (2 Y 4 A CUBIERTA)",
+      "pdf": "EAN-0519-AES-01-EST-PL-598-17.10.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-599-17.11",
+      "numero": "17.11",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 2 PISO 2 A PISO 3",
+      "pdf": "EAN-0519-AES-01-EST-PL-599-17.11.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-5100-17.12",
+      "numero": "17.12",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 2 PISO 3 A PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-PL-5100-17.12.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-5101-17.13",
+      "numero": "17.13",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DESPIECE DE ESCALERA TIPO 2 PISO 3 A PISO 4",
+      "pdf": "EAN-0519-AES-01-EST-PL-5101-17.13.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-5102-18.00",
+      "numero": "18",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DETALLES DE MUROS NO ESTRUCTURALES",
+      "pdf": "EAN-0519-AES-01-EST-PL-5102-18.00.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-5103-18.01",
+      "numero": "18.01",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DETALLES DE MUROS NO ESTRUCTURALES",
+      "pdf": "EAN-0519-AES-01-EST-PL-5103-18.01.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-5104-18.02",
+      "numero": "18.02",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DETALLES DE MUROS NO ESTRUCTURALES",
+      "pdf": "EAN-0519-AES-01-EST-PL-5104-18.02.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-5105-18.03",
+      "numero": "18.03",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DETALLES DE MUROS NO ESTRUCTURALES",
+      "pdf": "EAN-0519-AES-01-EST-PL-5105-18.03.pdf"
+    },
+    {
+      "plano": "EAN-0519-AES-01-EST-PL-5106-18.04",
+      "numero": "18.04",
+      "version": 0,
+      "fecha": 46059,
+      "contenido": "DETALLES DE MUROS NO ESTRUCTURALES",
+      "pdf": "EAN-0519-AES-01-EST-PL-5106-18.04.pdf"
+    }
+  ],
+  "columnas": [
+    {
+      "id": "ID COLUMNA",
+      "seccion": "Sección",
+      "cantidad": null,
+      "resistencia": null,
+      "plano": "Plano",
+      "volumen": null,
+      "peso": null
+    },
+    {
+      "id": "Columna 01",
+      "seccion": "0.60m",
+      "cantidad": 2,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-58-4.01",
+      "volumen": 18.41,
+      "peso": 4394.66
+    },
+    {
+      "id": "Columna 02",
+      "seccion": "0.60m",
+      "cantidad": 1,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-58-4.01",
+      "volumen": 8.6,
+      "peso": 3131.86
+    },
+    {
+      "id": "Columna 02A",
+      "seccion": "0.60m",
+      "cantidad": 1,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-58-4.01",
+      "volumen": 8.6,
+      "peso": 3241.79
+    },
+    {
+      "id": "Columna 03",
+      "seccion": "0.60m",
+      "cantidad": 1,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-59-4.02",
+      "volumen": 11.38,
+      "peso": 2798.45
+    },
+    {
+      "id": "Columna 04",
+      "seccion": "0.60m",
+      "cantidad": 1,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-59-4.02",
+      "volumen": 11.31,
+      "peso": 2801.47
+    },
+    {
+      "id": "Columna 05",
+      "seccion": "0.60m",
+      "cantidad": 2,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-59-4.02",
+      "volumen": 20.83,
+      "peso": 6239.22
+    },
+    {
+      "id": "Columna 06",
+      "seccion": "0.60m",
+      "cantidad": 7,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-51-4.03",
+      "volumen": 60.82,
+      "peso": 25033.09
+    },
+    {
+      "id": "Columna 06A",
+      "seccion": "0.60m",
+      "cantidad": 1,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-51-4.03",
+      "volumen": 8.6,
+      "peso": 3699.09
+    },
+    {
+      "id": "Columna 07",
+      "seccion": "70x70",
+      "cantidad": 2,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-51-4.03",
+      "volumen": 3.39,
+      "peso": 1174.97
+    },
+    {
+      "id": "Columna 08",
+      "seccion": "0.60m",
+      "cantidad": 1,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-511-4.04",
+      "volumen": 1.15,
+      "peso": 357.25
+    },
+    {
+      "id": "Columna 09",
+      "seccion": "40x40",
+      "cantidad": 1,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-511-4.04",
+      "volumen": 0.4,
+      "peso": 163.46
+    },
+    {
+      "id": "Columna 10",
+      "seccion": "0.60m",
+      "cantidad": 3,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-511-4.04",
+      "volumen": 26.88,
+      "peso": 6700.24
+    },
+    {
+      "id": "Columna 11",
+      "seccion": "0.60m",
+      "cantidad": 1,
+      "resistencia": 42,
+      "plano": "EAN-519-AES-1-EST--PL-511-4.04",
+      "volumen": 8.62,
+      "peso": 3840.56
+    }
+  ],
+  "muros": [
+    {
+      "id": "ID MURO",
+      "espesor": null,
+      "longitud": null,
+      "plano": "Plano",
+      "cantidad": null,
+      "resistencia": null,
+      "volumen": null,
+      "peso": null
+    },
+    {
+      "id": "M1",
+      "espesor": 0.3,
+      "longitud": 8.32,
+      "plano": "EAN-519-AES-1-EST--PL-512-4.05",
+      "cantidad": 1,
+      "resistencia": 42,
+      "volumen": 212.99,
+      "peso": 27994
+    },
+    {
+      "id": "M2",
+      "espesor": null,
+      "longitud": 0,
+      "plano": "EAN-519-AES-1-EST--PL-513-4.06",
+      "cantidad": 1,
+      "resistencia": 42,
+      "volumen": 189.71,
+      "peso": 38080
+    },
+    {
+      "id": "M3",
+      "espesor": 0.3,
+      "longitud": 0,
+      "plano": "EAN-519-AES-1-EST--PL-514-4.07",
+      "cantidad": 1,
+      "resistencia": 42,
+      "volumen": 115.5,
+      "peso": 9220
+    },
+    {
+      "id": "M4",
+      "espesor": 0.3,
+      "longitud": 0,
+      "plano": "EAN-519-AES-1-EST--PL-514-4.07",
+      "cantidad": 2,
+      "resistencia": 42,
+      "volumen": 26.72,
+      "peso": 2896
+    }
+  ],
+  "vigas": [
+    {
+      "id": "ID VIGA",
+      "piso": "Piso",
+      "seccion": "Sección",
+      "plano": "Plano",
+      "cantidad": null,
+      "resistencia": null,
+      "volumen": null,
+      "peso": null
+    },
+    {
+      "id": "201",
+      "piso": "2",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-540-8.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.46,
+      "peso": 407.94
+    },
+    {
+      "id": "202",
+      "piso": "2",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-540-8.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 3.88,
+      "peso": 407.94
+    },
+    {
+      "id": "203",
+      "piso": "2",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-540-8.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.46,
+      "peso": 407.94
+    },
+    {
+      "id": "204",
+      "piso": "2",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-540-8.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.86,
+      "peso": 407.94
+    },
+    {
+      "id": "205",
+      "piso": "2",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-540-8.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 3.86,
+      "peso": 407.94
+    },
+    {
+      "id": "206",
+      "piso": "2",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-540-8.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.71,
+      "peso": 407.94
+    },
+    {
+      "id": "207",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-540-8.03",
+      "cantidad": 8,
+      "resistencia": 35,
+      "volumen": 8.56,
+      "peso": 407.94
+    },
+    {
+      "id": "208",
+      "piso": "2",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 3.57,
+      "peso": 407.94
+    },
+    {
+      "id": "209",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 5,
+      "resistencia": 35,
+      "volumen": 2.63,
+      "peso": 407.94
+    },
+    {
+      "id": "210",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.96,
+      "peso": 407.94
+    },
+    {
+      "id": "211",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.84,
+      "peso": 407.94
+    },
+    {
+      "id": "212",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 4,
+      "resistencia": 35,
+      "volumen": 5.78,
+      "peso": 407.94
+    },
+    {
+      "id": "213",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 6,
+      "resistencia": 35,
+      "volumen": 2.89,
+      "peso": 407.94
+    },
+    {
+      "id": "214",
+      "piso": "2",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 3.44,
+      "peso": 407.94
+    },
+    {
+      "id": "215",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 6.2,
+      "peso": 407.94
+    },
+    {
+      "id": "216",
+      "piso": "2",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.7,
+      "peso": 407.94
+    },
+    {
+      "id": "217",
+      "piso": "2",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.16,
+      "peso": 407.94
+    },
+    {
+      "id": "218",
+      "piso": "2",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-541-8.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.54,
+      "peso": 407.94
+    },
+    {
+      "id": "219",
+      "piso": "2",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.53,
+      "peso": 407.94
+    },
+    {
+      "id": "220",
+      "piso": "2",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.34,
+      "peso": 407.94
+    },
+    {
+      "id": "221",
+      "piso": "2",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.93,
+      "peso": 407.94
+    },
+    {
+      "id": "222",
+      "piso": "2",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.98,
+      "peso": 407.94
+    },
+    {
+      "id": "223",
+      "piso": "2",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.4,
+      "peso": 407.94
+    },
+    {
+      "id": "224",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.27,
+      "peso": 407.94
+    },
+    {
+      "id": "225",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.1,
+      "peso": 407.94
+    },
+    {
+      "id": "226",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.17,
+      "peso": 407.94
+    },
+    {
+      "id": "227",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.1,
+      "peso": 407.94
+    },
+    {
+      "id": "228",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.61,
+      "peso": 407.94
+    },
+    {
+      "id": "229",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 1.59,
+      "peso": 407.94
+    },
+    {
+      "id": "230",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.17,
+      "peso": 407.94
+    },
+    {
+      "id": "231",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.1,
+      "peso": 407.94
+    },
+    {
+      "id": "232",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.17,
+      "peso": 407.94
+    },
+    {
+      "id": "233",
+      "piso": "2",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.08,
+      "peso": 407.94
+    },
+    {
+      "id": "234",
+      "piso": "2",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.75,
+      "peso": 407.94
+    },
+    {
+      "id": "235",
+      "piso": "2",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.56,
+      "peso": 407.94
+    },
+    {
+      "id": "236",
+      "piso": "2",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.62,
+      "peso": 407.94
+    },
+    {
+      "id": "237",
+      "piso": "2",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-542-8.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.87,
+      "peso": 407.94
+    },
+    {
+      "id": "238",
+      "piso": "2",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.9,
+      "peso": 407.94
+    },
+    {
+      "id": "239",
+      "piso": "2",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.57,
+      "peso": 407.94
+    },
+    {
+      "id": "240",
+      "piso": "2",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.38,
+      "peso": 407.94
+    },
+    {
+      "id": "241",
+      "piso": "2",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.27,
+      "peso": 407.94
+    },
+    {
+      "id": "242",
+      "piso": "2",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.82,
+      "peso": 407.94
+    },
+    {
+      "id": "243",
+      "piso": "2",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.3,
+      "peso": 407.94
+    },
+    {
+      "id": "244",
+      "piso": "2",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.76,
+      "peso": 407.94
+    },
+    {
+      "id": "245",
+      "piso": "2",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.44,
+      "peso": 407.94
+    },
+    {
+      "id": "246",
+      "piso": "2",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.29,
+      "peso": 407.94
+    },
+    {
+      "id": "247",
+      "piso": "2",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.82,
+      "peso": 407.94
+    },
+    {
+      "id": "248",
+      "piso": "2",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.77,
+      "peso": 407.94
+    },
+    {
+      "id": "249",
+      "piso": "2",
+      "seccion": "S=40x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.39,
+      "peso": 407.94
+    },
+    {
+      "id": "250",
+      "piso": "2",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N02-PL-543-8.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.75,
+      "peso": 407.94
+    },
+    {
+      "id": "301",
+      "piso": "3",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.64,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "302",
+      "piso": "3",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.4,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "303",
+      "piso": "3",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 5.51,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "304",
+      "piso": "3",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 3.53,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "305",
+      "piso": "3",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.36,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "306",
+      "piso": "3",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.03",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.32,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "307",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.03",
+      "cantidad": 8,
+      "resistencia": 35,
+      "volumen": 9.55,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "308",
+      "piso": "3",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.3,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "309",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.04",
+      "cantidad": 5,
+      "resistencia": 35,
+      "volumen": 3.52,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "310",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.04,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "311",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.34,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "312",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.04",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 6.24,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "313",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.04",
+      "cantidad": 5,
+      "resistencia": 35,
+      "volumen": 3.4,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "314",
+      "piso": "3",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.14,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "315",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 9.36,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "316",
+      "piso": "3",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.75,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "317",
+      "piso": "3",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.31,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "318",
+      "piso": "3",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.05,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "319",
+      "piso": "3",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.1,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "320",
+      "piso": "3",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.4,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "321",
+      "piso": "3",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.36,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "322",
+      "piso": "3",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.25,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "323",
+      "piso": "3",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.4,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "324",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.48,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "325",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.36,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "326",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.38,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "327",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.7,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "328",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.77,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "329",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.73,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "330",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.38,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "331",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.44,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "332",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.57,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "333",
+      "piso": "3",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.46,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "334",
+      "piso": "3",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.67,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "335",
+      "piso": "3",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.52,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "336",
+      "piso": "3",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.65,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "337",
+      "piso": "3",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.45,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "338",
+      "piso": "3",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.95,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "339",
+      "piso": "3",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.36,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "340",
+      "piso": "3",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 0.32,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "341",
+      "piso": "3",
+      "seccion": "S=40x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.49,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "342",
+      "piso": "3",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.27,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "343",
+      "piso": "3",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.68,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "344",
+      "piso": "3",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.95,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "345",
+      "piso": "3",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.34,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "346",
+      "piso": "3",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.93,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "347",
+      "piso": "3",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N03-PL-546-9.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.57,
+      "peso": 433.702127659574
+    },
+    {
+      "id": "401",
+      "piso": "4",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.99,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "402",
+      "piso": "4",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.4,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "403",
+      "piso": "4",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 5.43,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "404",
+      "piso": "4",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 3.53,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "405",
+      "piso": "4",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.36,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "406",
+      "piso": "4",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.94,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "407",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.03",
+      "cantidad": 8,
+      "resistencia": 35,
+      "volumen": 9.27,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "408",
+      "piso": "4",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.3,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "409",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 5,
+      "resistencia": 35,
+      "volumen": 3.42,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "410",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.53,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "411",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.11,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "412",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 6.6,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "413",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 5,
+      "resistencia": 35,
+      "volumen": 3.41,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "414",
+      "piso": "4",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.14,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "415",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 9.61,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "416",
+      "piso": "4",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.64,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "417",
+      "piso": "4",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.33,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "418",
+      "piso": "4",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.87,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "419",
+      "piso": "4",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.61,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "420",
+      "piso": "4",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.4,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "421",
+      "piso": "4",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.13,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "422",
+      "piso": "4",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.98,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "423",
+      "piso": "4",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.4,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "424",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.31,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "425",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.36,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "426",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.39,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "427",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.44,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "428",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 1.85,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "429",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.92,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "430",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.38,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "431",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.29,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "432",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.39,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "433",
+      "piso": "4",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.2,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "434",
+      "piso": "4",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.68,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "435",
+      "piso": "4",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.94,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "436",
+      "piso": "4",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.93,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "437",
+      "piso": "4",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.64,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "438",
+      "piso": "4",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.56,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "439",
+      "piso": "4",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.14,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "440",
+      "piso": "4",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.27,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "441",
+      "piso": "4",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.77,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "442",
+      "piso": "4",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.95,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "443",
+      "piso": "4",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.14,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "444",
+      "piso": "4",
+      "seccion": "S=40x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.71,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "445",
+      "piso": "4",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.93,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "446",
+      "piso": "4",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.57,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "447",
+      "piso": "4",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.06,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "448",
+      "piso": "4",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.68,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "449",
+      "piso": "4",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N04-PL-552-10.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.94,
+      "peso": 428.469387755102
+    },
+    {
+      "id": "501",
+      "piso": "5",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.03",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.12,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "502",
+      "piso": "5",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.4,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "503",
+      "piso": "5",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 5.43,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "504",
+      "piso": "5",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 3.57,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "505",
+      "piso": "5",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.36,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "506",
+      "piso": "5",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.03",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 2.36,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "507",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.03",
+      "cantidad": 8,
+      "resistencia": 35,
+      "volumen": 9.31,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "508",
+      "piso": "5",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.3,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "509",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 3.67,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "510",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.23,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "511",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.41,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "512",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 6.47,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "513",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 3.54,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "514",
+      "piso": "5",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.14,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "515",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 9.55,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "516",
+      "piso": "5",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.96,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "517",
+      "piso": "5",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.87,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "518",
+      "piso": "5",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.03,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "519",
+      "piso": "5",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.39,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "520",
+      "piso": "5",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.23,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "521",
+      "piso": "5",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.12,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "522",
+      "piso": "5",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.4,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "523",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.64,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "524",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.37,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "525",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.38,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "526",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.47,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "527",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.83,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "528",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 1.93,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "529",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.38,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "530",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.57,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "531",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.41,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "532",
+      "piso": "5",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.53,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "533",
+      "piso": "5",
+      "seccion": "S=30x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.51,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "534",
+      "piso": "5",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.79,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "535",
+      "piso": "5",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.69,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "536",
+      "piso": "5",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.32,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "537",
+      "piso": "5",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.39,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "538",
+      "piso": "5",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.81,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "539",
+      "piso": "5",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.83,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "540",
+      "piso": "5",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.95,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "541",
+      "piso": "5",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.21,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "542",
+      "piso": "5",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.74,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "543",
+      "piso": "5",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.94,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "544",
+      "piso": "5",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.89,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "545",
+      "piso": "5",
+      "seccion": "S=40x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.71,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "546",
+      "piso": "5",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.57,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "547",
+      "piso": "5",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N05-PL-558-11.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.56,
+      "peso": 430.042553191489
+    },
+    {
+      "id": "601",
+      "piso": "6",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.52,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "602",
+      "piso": "6",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.4,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "603",
+      "piso": "6",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 5.51,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "604",
+      "piso": "6",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 3.57,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "605",
+      "piso": "6",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.36,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "606",
+      "piso": "6",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.03",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.04,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "607",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.03",
+      "cantidad": 8,
+      "resistencia": 35,
+      "volumen": 9.09,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "608",
+      "piso": "6",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.3,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "609",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 3.84,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "610",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 2.16,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "611",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "612",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 6.34,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "613",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 6,
+      "resistencia": 35,
+      "volumen": 3.57,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "614",
+      "piso": "6",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.14,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "615",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 9.38,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "616",
+      "piso": "6",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.69,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "617",
+      "piso": "6",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.51,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "618",
+      "piso": "6",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.6,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "619",
+      "piso": "6",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.16,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "620",
+      "piso": "6",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.33,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "621",
+      "piso": "6",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.29,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "622",
+      "piso": "6",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.02,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "623",
+      "piso": "6",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 2.4,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "624",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.46,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "625",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.29,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "626",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.38,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "627",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.29,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "628",
+      "piso": "6",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.47,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "629",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.7,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "630",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.38,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "631",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.33,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "632",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.31,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "633",
+      "piso": "6",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.2,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "634",
+      "piso": "6",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.73,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "635",
+      "piso": "6",
+      "seccion": "S=30x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.49,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "636",
+      "piso": "6",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.64,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "637",
+      "piso": "6",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 0.5,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "638",
+      "piso": "6",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.29,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "639",
+      "piso": "6",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.49,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "640",
+      "piso": "6",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.86,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "641",
+      "piso": "6",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.95,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "642",
+      "piso": "6",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.74,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "643",
+      "piso": "6",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.95,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "644",
+      "piso": "6",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.89,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "645",
+      "piso": "6",
+      "seccion": "S=40x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.49,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "646",
+      "piso": "6",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.57,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "647",
+      "piso": "6",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N06-PL-564-12.06",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.82,
+      "peso": 417.787234042553
+    },
+    {
+      "id": "701",
+      "piso": "7",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.03",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.08,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "702",
+      "piso": "7",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.4,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "703",
+      "piso": "7",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 5.51,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "704",
+      "piso": "7",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 3.57,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "705",
+      "piso": "7",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.36,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "706",
+      "piso": "7",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.03",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.64,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "707",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.03",
+      "cantidad": 8,
+      "resistencia": 35,
+      "volumen": 9.1,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "708",
+      "piso": "7",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.03",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.3,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "709",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 3.84,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "710",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.05,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "711",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.25,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "712",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 3,
+      "resistencia": 35,
+      "volumen": 6.65,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "713",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 3.63,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "714",
+      "piso": "7",
+      "seccion": "S=50x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 4.14,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "715",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 7,
+      "resistencia": 35,
+      "volumen": 9.6,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "716",
+      "piso": "7",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.76,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "717",
+      "piso": "7",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.05,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "718",
+      "piso": "7",
+      "seccion": "S=50x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.53,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "719",
+      "piso": "7",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.88,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "720",
+      "piso": "7",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.29,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "721",
+      "piso": "7",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.04",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.93,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "722",
+      "piso": "7",
+      "seccion": "S=25x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 2.43,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "723",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.51,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "724",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.37,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "725",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.41,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "726",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.37,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "727",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.77,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "728",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.92,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "729",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.38,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "730",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.5,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "731",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.69,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "732",
+      "piso": "7",
+      "seccion": "<varies>",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.27,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "733",
+      "piso": "7",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "734",
+      "piso": "7",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.93,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "735",
+      "piso": "7",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.82,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "736",
+      "piso": "7",
+      "seccion": "S=40x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.14,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "737",
+      "piso": "7",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 0.3,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "738",
+      "piso": "7",
+      "seccion": "S=20x65",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.92,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "739",
+      "piso": "7",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.76,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "740",
+      "piso": "7",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.95,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "741",
+      "piso": "7",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.67,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "742",
+      "piso": "7",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.94,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "743",
+      "piso": "7",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 0.83,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "744",
+      "piso": "7",
+      "seccion": "S=40x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 2,
+      "resistencia": 35,
+      "volumen": 1.49,
+      "peso": 417.733333333333
+    },
+    {
+      "id": "745",
+      "piso": "7",
+      "seccion": "S=30x75",
+      "plano": "EAN-519-AES-1-EST-N07-PL-570-13.05",
+      "cantidad": 1,
+      "resistencia": 35,
+      "volumen": 1.57,
+      "peso": 417.733333333333
+    }
+  ],
+  "parametros": [
+    {
+      "caracteristica": "Localización:",
+      "valor": "Calle 71 #9-84"
+    },
+    {
+      "caracteristica": "Número de pisos elevados:",
+      "valor": "7"
+    },
+    {
+      "caracteristica": "Número de pisos enterrados:",
+      "valor": "1"
+    },
+    {
+      "caracteristica": "Uso de la edificación:",
+      "valor": "Institucional "
+    },
+    {
+      "caracteristica": "Placa de Entrepisos:",
+      "valor": "Placa Maciza con Vigas Descolgadas"
+    },
+    {
+      "caracteristica": "Método de Análisis:",
+      "valor": "Análisis Dinámico"
+    },
+    {
+      "caracteristica": "Sistema Estructural:",
+      "valor": "Combinado DMO"
+    },
+    {
+      "caracteristica": "Análisis Sísmico según:",
+      "valor": "NSR-10"
+    },
+    {
+      "caracteristica": "Caracterización Sísmica:",
+      "valor": "PIEDEMONTE B"
+    },
+    {
+      "caracteristica": "Perfil de suelo:",
+      "valor": "F"
+    },
+    {
+      "caracteristica": "Grupo de Uso:",
+      "valor": "III"
+    },
+    {
+      "caracteristica": "Coeficiente de Sitio:",
+      "valor": "1.25"
+    },
+    {
+      "caracteristica": "Estudio de Suelos No.",
+      "valor": "AUS-23136"
+    },
+    {
+      "caracteristica": "De la Firma:",
+      "valor": "Alfonso Uribe S. y Cia. S.A. estudios de suelos"
+    },
+    {
+      "caracteristica": "Tipo de Cimentación:",
+      "valor": "Placa - Pilote "
+    },
+    {
+      "caracteristica": "Director del Proyecto:",
+      "valor": "Daniel Quicano"
+    }
+  ],
+  "materiales": [
+    {
+      "material": "Pilotes Constructivos y Definitivos ",
+      "resistencia": "280"
+    },
+    {
+      "material": "Vigas y placa de Cimentación",
+      "resistencia": "350"
+    },
+    {
+      "material": "Tanque de Fondo",
+      "resistencia": "350"
+    },
+    {
+      "material": "Tanques Secundarios",
+      "resistencia": "350"
+    },
+    {
+      "material": "Barretes y Pantallas",
+      "resistencia": "280"
+    },
+    {
+      "material": "Muros y Columnas de Cimentación a Piso 4",
+      "resistencia": "420"
+    },
+    {
+      "material": "Muros y Columnas de Piso 4 a Cubierta de Máquinas",
+      "resistencia": "350"
+    },
+    {
+      "material": "Vigas y placas de Piso 1 a Cubierta de Maquinas",
+      "resistencia": "350"
+    },
+    {
+      "material": "Escaleras",
+      "resistencia": "280"
+    },
+    {
+      "material": "Varillas de refuerzo (NTC 2289)",
+      "resistencia": "4200"
+    },
+    {
+      "material": "Malla electrosoldada placas (NTC 5806)",
+      "resistencia": "4200"
+    }
+  ]
+}

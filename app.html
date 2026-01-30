@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+
+<!-- FRANJA SUPERIOR -->
+<header class="header">
+  <!-- Flecha atrás -->
+  <button class="back" onclick="history.back()">←</button>
+
+  <!-- Títulos -->
+  <div class="header-center">
+    <h1 id="tituloProyecto"></h1>
+    <h2 id="tituloSeccion"></h2>
+  </div>
+
+  <!-- Logo -->
+  <div class="header-right">
+    <img src="assets/img/LogoB.png" class="logo">
+  </div>
+</header>
+
+<!-- MENÚ -->
+<main class="menu">
+
+    <a class="card" href="planos.html">
+        <img src="assets/img/Planos.png">
+        <span>Planos</span>
+    </a>
+
+    <a class="card" href="elementos.html?tipo=columnas">
+        <img src="assets/img/columnas.png">
+        <span>Columnas</span>
+    </a>
+
+    <a class="card" href="elementos.html?tipo=muros">
+        <img src="assets/img/muros.png">
+        <span>Muros</span>
+    </a>
+
+    <a class="card" href="elementos.html?tipo=vigas">
+        <img src="assets/img/vigas.png">
+        <span>Vigas</span>
+    </a>
+
+    <a class="card" href="parametros.html">
+        <img src="assets/img/Modelo3D.png">
+        <span>Parámetros de diseño</span>
+    </a>
+
+    <a class="card" href="info.html">
+        <img src="assets/img/Modelo3D.png">
+        <span>Información adicional</span>
+    </a>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="js/data.js"></script>
+
+<script src="js/login.js"></script>
+<script>
+  protegerPagina();
+</script>
+
+</body>
+</html>
