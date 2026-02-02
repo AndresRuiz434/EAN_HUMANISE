@@ -84,3 +84,4 @@ function cambiarTipo(nuevoTipo) {
   limpiarDetalle();
 }
 
+
