@@ -58,14 +58,14 @@ function configurarWhatsapp(proyecto) {
     `Hola, quisiera información sobre el proyecto: ${proyecto}`
   );
 
-  btn.href = `https://wa.me/573157106081?text=${mensaje}`;
+  btn.href = `https://wa.me/57${info.telefono}?text=${mensaje}`;
 }
 
 function configurarCorreo(proyecto) {
   const btn = document.getElementById("btnCorreo");
   if (!btn) return;
 
-  const correo = "marcelopaez@aycardiestructural.com"; 
+  const correo = data.info.correo; 
   const asunto = encodeURIComponent(`Consulta proyecto: ${proyecto}`);
   const cuerpo = encodeURIComponent(
     `Buen día,\n\nQuisiera recibir información sobre el proyecto:\n${proyecto}\n\nGracias.`
