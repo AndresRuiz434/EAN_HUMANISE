@@ -2,7 +2,9 @@
 {
   "info": {
     "proyecto": "AE-0466 EAN HUMANISE STUDIO",
-    "bim": "https://acc.autodesk.eu/docs/files/projects/6cb70048-7a2f-4420-8a2a-c6e0177b40f9?folderUrn=urn%3Aadsk.wipemea%3Afs.folder%3Aco.x2Ja1ltGSmCRYUaFnslmHw&entityId=urn%3Aadsk.wipemea%3Adm.lineage%3A2_e9HEhwTeC9W0M2SStAWg&viewModel=detail&moduleId=folders&viewableGuid=c4315ec3-c31e-1476-b281-bd5e22204769."
+    "bim": "https://acc.autodesk.eu/docs/files/projects/6cb70048-7a2f-4420-8a2a-c6e0177b40f9?folderUrn=urn%3Aadsk.wipemea%3Afs.folder%3Aco.x2Ja1ltGSmCRYUaFnslmHw&entityId=urn%3Aadsk.wipemea%3Adm.lineage%3A2_e9HEhwTeC9W0M2SStAWg&viewModel=detail&moduleId=folders&viewableGuid=c4315ec3-c31e-1476-b281-bd5e22204769.",
+    "telefono": "3157106081",
+    "correo": "marcelopaez@aycardiestructural.com"
   },
   "planos": [
     {
@@ -4280,4 +4282,5 @@
       "resistencia": "4200"
     }
   ]
+
 }
