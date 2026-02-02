@@ -11,8 +11,10 @@
 
 <header class="header">
   <!-- Flecha atrás -->
-  <button class="back" onclick="history.back()">←</button>
-
+  <div class="header-left">
+    <button class="back" onclick="history.back()">←</button>
+    <button class="icon-btn" onclick="window.location.href='app.html'" title="Inicio">🏠</button>
+  </div>
   <!-- Títulos -->
   <div class="header-center">
     <h1 id="tituloProyecto"></h1>
@@ -25,7 +27,7 @@
   </div>
 </header>
 
-  <main class="contenedor">
+  <main class="main-content">
 
     <!-- PARAMETROS -->
     <section class="bloque">
@@ -79,4 +81,13 @@
 </script>
 
 </body>
+<nav class="side-menu">
+  <a href="elementos.html?tipo=columnas" title="Columnas"><img src="assets/img/ICONOS/IcoColumna.png" width="20" height="30"></a>
+  <a href="elementos.html?tipo=vigas" title="Vigas"><img src="assets/img/ICONOS/IcoViga.png" width="20" height="30"></a>
+  <a href="elementos.html?tipo=muros" title="Muros"><img src="assets/img/ICONOS/IcoMuro.png" width="20" height="30"></a>
+  <a href="planos.html" title="Planos"><img src="assets/img/ICONOS/IcoPlano.png" width="20" height="30"></a>
+  <a href="info.html" title="Información">ℹ️</a>
+</nav>
+
 </html>
+
