@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
       cargarTitulos(data);
       cargarParametros(data.parametros);
       cargarMateriales(data.materiales);
-      configurarWhatsapp(data.info.proyecto);
-      configurarCorreo(data.info.proyecto);
+      configurarWhatsapp(data.info);
+      configurarCorreo(data.info);
     })
     .catch(err => console.error("Error cargando datos:", err));
 });
@@ -50,28 +50,27 @@ function cargarMateriales(materiales) {
   });
 }
 
-function configurarWhatsapp(proyecto) {
+function configurarWhatsapp(info) {
   const btn = document.getElementById("btnWhatsapp");
   if (!btn) return;
 
   const mensaje = encodeURIComponent(
-    `Hola, quisiera información sobre el proyecto: ${proyecto}`
+    `Hola, quisiera información sobre el proyecto: ${info.proyecto}`
   );
 
   btn.href = `https://wa.me/57${info.telefono}?text=${mensaje}`;
 }
 
-function configurarCorreo(proyecto) {
+function configurarCorreo(info) {
   const btn = document.getElementById("btnCorreo");
   if (!btn) return;
 
-  const correo = data.info.correo; 
-  const asunto = encodeURIComponent(`Consulta proyecto: ${proyecto}`);
+  const correo = info.correo; 
+  const asunto = encodeURIComponent(`Consulta proyecto: ${info.proyecto}`);
   const cuerpo = encodeURIComponent(
-    `Buen día,\n\nQuisiera recibir información sobre el proyecto:\n${proyecto}\n\nGracias.`
+    `Buen día,\n\nQuisiera recibir información sobre el proyecto:\n${info.proyecto}\n\nGracias.`
   );
 
   btn.href = `mailto:${correo}?subject=${asunto}&body=${cuerpo}`;
 }
-
 
