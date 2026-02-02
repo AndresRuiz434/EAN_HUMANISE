@@ -58,14 +58,14 @@ function configurarWhatsapp(proyecto) {
     `Hola, quisiera información sobre el proyecto: ${proyecto}`
   );
 
-  btn.href = `https://wa.me/573115589669?text=${mensaje}`;
+  btn.href = `https://wa.me/573157106081?text=${mensaje}`;
 }
 
 function configurarCorreo(proyecto) {
   const btn = document.getElementById("btnCorreo");
   if (!btn) return;
 
-  const correo = "danielquicano@aycardiestructural.com"; 
+  const correo = "marcelopaez@aycardiestructural.com"; 
   const asunto = encodeURIComponent(`Consulta proyecto: ${proyecto}`);
   const cuerpo = encodeURIComponent(
     `Buen día,\n\nQuisiera recibir información sobre el proyecto:\n${proyecto}\n\nGracias.`
@@ -73,4 +73,5 @@ function configurarCorreo(proyecto) {
 
   btn.href = `mailto:${correo}?subject=${asunto}&body=${cuerpo}`;
 }
+
 
