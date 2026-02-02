@@ -621,6 +621,9 @@ body.login {
 @media (max-width: 768px) {
     .login-container {
     flex-direction: column;
+    display: flex;
+    gap: 24px;
+    padding: 16px;
   }
 
   .login-image {
@@ -635,7 +638,9 @@ body.login {
     width: 90%;
     max-width: 340px;
     height: auto;
+    max-height: 220px;
     object-fit: contain;
+    margin-top: 16px;
   }
 
   .login-card {
@@ -725,5 +730,7 @@ body.login {
 .main-content {
   margin-left: 72px;
 }
+
+
 
 
