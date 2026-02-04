@@ -1,6 +1,6 @@
 const USUARIOS = [
-  { user: "cliente.aycardi", pass: "1234" },
-  { user: "admin.aycardi", pass: "1234" }
+  { user: "cliente.aycardi", pass: "1234", rol: "cliente" },
+  { user: "admin.aycardi", pass: "1234", rol: "interno" }
 ];
 const tituloSeccion = document.getElementById("tituloSeccion");
 
@@ -32,6 +32,7 @@ function login() {
   if (valido) {
     localStorage.setItem("autenticado", "true");
     localStorage.setItem("usuario", user);
+    localStorage.setItem("rol", valido.rol)
     window.location.href = "app.html";
   } else {
     if (error) error.textContent = "Usuario o contraseña incorrectos";
