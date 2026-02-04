@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cargarMateriales(data.materiales);
       configurarWhatsapp(data.info);
       configurarCorreo(data.info);
+      configurarCorreo2(data.info);
     })
     .catch(err => console.error("Error cargando datos:", err));
 });
@@ -74,3 +75,15 @@ function configurarCorreo(info) {
   btn.href = `mailto:${correo}?subject=${asunto}&body=${cuerpo}`;
 }
 
+function configurarCorreo2(info) {
+  const btn = document.getElementById("btnCorreo2");
+  if (!btn) return;
+
+  const correo = "administracion@aycardiestructural.com" ; 
+  const asunto = encodeURIComponent(`Consulta proyecto: ${info.proyecto}`);
+  const cuerpo = encodeURIComponent(
+    `Buen día,\n\nQuisiera recibir información sobre el proyecto:\n${info.proyecto}\n\nGracias.`
+  );
+
+  btn.href = `mailto:${correo}?subject=${asunto}&body=${cuerpo}`;
+}
