@@ -3,16 +3,12 @@ const CAMPOS = {
     id: "ID Columna",
     seccion: "Sección",
     plano: "Plano",
-    peso: "Peso refuerzo (kg)",
-    volumen: "Volumen (m³)"
   },
   muros: {
     id: "ID Muro",
     espesor: "Espesor (m)",
     longitud: "Longitud (m)",
     plano: "Plano",
-    peso: "Peso refuerzo (kg)",
-    volumen: "Volumen (m³)"
   },
   vigas: {
     id: "ID Viga",
@@ -65,6 +61,27 @@ fetch("data/datos.json")
     tituloSeccion.textContent = tipo.toUpperCase();
 
     cargarLista(elementos);
+
+    renderGraficaResistenciaPorPiso(DATA[tipo]);
+
+    const selectPiso = document.getElementById("selectPiso");
+    const bloquePiso = document.getElementById("bloquePiso");
+
+    if (tipo === "columnas" || tipo === "muros") {
+      bloquePiso.style.display = "block";
+
+      const pisos = [...new Set(DATA[tipo].map(e => String(e.piso || "").trim()).filter(p => p !== "" && p.toLowerCase() !== "piso"))];
+
+      pisos.sort((a, b) => pisoIndex(a) - pisoIndex(b));
+
+      pisos.forEach(p => {
+        const opt = document.createElement("option");
+        opt.value = p;
+        opt.textContent = p;
+        selectPiso.appendChild(opt);
+  });
+}
+
   });
 
 /* =======================
@@ -115,13 +132,13 @@ function seleccionarElemento(el) {
 
   detalle.innerHTML = `
     <h3>${el.id}</h3>
-    <div class="card-detalle">
+    <div class="card-detalle" id="cardDetalle">
       ${Object.keys(campos)
         .filter(c => {
-            if (tipo === "vigas" && (c === "peso" || c === "volumen")) {
-                return false;
-            }
-            return el[c] !== undefined;
+          if (tipo === "vigas" && (c === "peso" || c === "volumen")) {
+            return false;
+          }
+          return el[c] !== undefined;
         })
         .map(c => `
           <div class="fila">
@@ -130,10 +147,42 @@ function seleccionarElemento(el) {
           </div>
         `)
         .join("")}
+    <div class="separador"></div>
+
+    <div class="fila">
+      <span class="label">Volumen total (m³)</span>
+      <span class="valor" id="kpiVolumen">—</span>
     </div>
+
+    <div class="fila">
+      <span class="label">Acero total (kg)</span>
+      <span class="valor" id="kpiPeso">—</span>
+    </div>
+
+    <div class="fila">
+      <span class="label">Cuantía (kg/m³)</span>
+      <span class="valor" id="kpiCuantia">—</span>
+    </div>
+
+    <div class="fila">
+      <span class="label">Comparación</span>
+      <span class="valor" id="kpiComparacion">—</span>
+    </div>
+  </div>
   `;
 
   renderGrafica();
+
+  const piso = selectPiso?.value || "TOTAL";
+
+const registros = DATA[tipo].filter(e =>
+  (piso === "TOTAL" || e.piso === piso) &&
+  e.id === el.id
+);
+
+actualizarKPIs(registros, piso);
+
+
 }
 
 function agruparVigasPorPiso(vigas) {
@@ -227,12 +276,12 @@ function renderGrafica() {
 function renderGraficaVigasPorPiso(campo) {
   const pisoSeleccionado = elementoSeleccionado.piso;
 
-  // 🔹 Suma vigas SOLO del piso seleccionado
+  // Suma vigas SOLO del piso seleccionado
   const sumaPiso = DATA.vigas
     .filter(v => v.piso === pisoSeleccionado)
     .reduce((s, v) => s + (Number(v[campo]) || 0), 0);
 
-  // 🔹 Total del proyecto (igual que columnas/muros)
+  // Total del proyecto (igual que columnas/muros)
   const totalProyecto =
     [...DATA.columnas, ...DATA.muros, ...DATA.vigas]
       .reduce((s, e) => s + (Number(e[campo]) || 0), 0);
@@ -280,4 +329,211 @@ function renderGraficaVigasPorPiso(campo) {
   });
 }
 
+function colorPorResistencia(r) {
+  if (r <= 21) return "#0019FF"; 
+  if (r <= 24.5) return "#0049FF";
+  if (r <= 28) return "#0062FF";
+  if (r <= 31.5) return "#00AAFF";  
+  if (r <= 35) return "#00C3FF"; 
+  if (r <= 42) return "#00D8FF";
+  if (r <= 49) return "#00F3FF"; 
+  return "#C0392B";                 
+}
+
+function renderGraficaResistenciaPorPiso(vigas) {
+
+  // 1. Eliminar la primera fila (encabezados)
+  const datos = vigas.slice(1).filter(v =>
+    v.piso && !isNaN(Number(v.resistencia))
+  );
+
+  if (datos.length === 0) {
+    console.warn("No hay datos válidos para la gráfica");
+    return;
+  }
+
+  // 2. Agrupar por piso (resistencia promedio)
+  const porPiso = {};
+
+  datos.forEach(v => {
+    const piso = v.piso;
+    const res = Number(v.resistencia);
+
+    if (!porPiso[piso]) {
+      porPiso[piso] = { suma: 0, n: 0 };
+    }
+
+    porPiso[piso].suma += res;
+    porPiso[piso].n++;
+  });
+
+  // 3. Ordenar pisos
+  const pisos = Object.keys(porPiso).sort((a, b) => pisoIndex(a) - pisoIndex(b));
+
+  // 4. Crear datasets (uno por piso)
+  const datasets = pisos.map(piso => {
+    const resProm = porPiso[piso].suma / porPiso[piso].n;
+
+    return {
+      label: piso,
+      data: [1],
+      backgroundColor: colorPorResistencia(resProm),
+      resistencia: resProm,
+      stack: "pisos"
+    };
+  });
+
+  const ctx = document.getElementById("graficaPisos");
+  if (!ctx) return;
+
+  if (window.chartPisos) {
+    window.chartPisos.destroy();
+  }
+
+  window.chartPisos = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Resistencia"],
+      datasets
+    },
+    options: {
+      indexAxis: "x",
+      responsive: false,
+      maintainAspectRatio: true,
+
+      scales: {
+        x: {
+          stacked: true,
+          display: false
+        },
+        y: {
+          stacked: true,
+          ticks: {
+            callback: (_, index) => pisos[index]
+          },
+          title: {
+            display: true,
+            text: "Pisos"
+          }
+        }
+      },
+
+      plugins: {
+        legend: { display: false },
+        datalabels: {
+          color: "#fff",
+          font: { weight: "bold" },
+          formatter: (_, ctx) =>
+            ctx.dataset.resistencia.toFixed(0) + " MPa"
+        }
+      }
+    },
+    plugins: [ChartDataLabels]
+  });
+}
+
+
+selectPiso?.addEventListener("change", () => {
+  filtrarPorPiso();
+  if (elementoSeleccionado) {
+    const piso = selectPiso.value;
+    const registros = DATA[tipo].filter(e => e.id === elementoSeleccionado.id);
+    actualizarKPIs(registros, piso);
+  }
+});
+
+function pisoIndex(p) {
+  const txt = p.toUpperCase().trim();
+
+  // 🔹 Sótanos
+  if (txt.startsWith("B") || txt.startsWith("SOT")) {
+    const n = parseInt(txt.replace(/\D/g, "")) || 1;
+    return -n;
+  }
+
+  // Planta baja
+  if (txt === "PB" || txt === "PLANTA BAJA") return 0;
+
+  // Cubiertas
+  if (txt.includes("CUB")) return 1000;
+
+  // Cuarto de máquinas
+  if (txt.includes("MAQ")) return 1001;
+
+  // Pisos normales
+  const n = parseInt(txt.replace(/\D/g, ""));
+  return isNaN(n) ? 500 : n;
+}
+
+
+
+
+function filtrarPorPiso() {
+  const piso = selectPiso.value;
+
+  elementos = DATA[tipo].filter(e =>
+    piso === "TOTAL" || e.piso === piso
+  );
+
+  cargarLista();
+}
+
+function cargarLista() {
+  selectElemento.innerHTML =
+    `<option value="">Seleccione un ${tipo.slice(0, -1)}</option>`;
+
+  elementos.forEach((el, i) => {
+    const nombre = el.id || el["ID Columna"] || el["ID Muro"] || el["ID Viga"];
+    const piso = el.piso ? ` (${el.piso})` : "";
+
+    const opt = document.createElement("option");
+    opt.value = i;
+    opt.textContent = nombre + piso;
+    selectElemento.appendChild(opt);
+  });
+}
+
+function actualizarKPIs(registrosElemento, pisoSeleccionado) {
+
+  // TODOS los registros del elemento (para volumen total)
+  const todos = DATA[tipo].filter(e => e.id === registrosElemento[0].id);
+
+  // Registros SOLO del piso seleccionado
+  const piso = pisoSeleccionado === "TOTAL"
+    ? todos
+    : todos.filter(e => e.piso === pisoSeleccionado);
+
+  // Volúmenes
+  const volumenTotal = todos.reduce((s, e) => s + (Number(e.volumen) || 0), 0);
+  const volumenPiso = piso.reduce((s, e) => s + (Number(e.volumen) || 0), 0);
+
+  // Acero → se toma UNA sola vez
+  const acero = Number(
+    todos.find(e => e.peso && Number(e.peso) > 0)?.peso || 0
+  );
+
+  // Cuantía REAL del elemento
+  const cuantia = volumenTotal > 0 ? acero / volumenTotal : 0;
+
+  // Mostrar
+  document.getElementById("kpiVolumen").textContent =
+    (pisoSeleccionado === "TOTAL" ? volumenTotal : volumenPiso).toFixed(2) + " m³";
+
+  document.getElementById("kpiPeso").textContent = acero.toFixed(1) + " kg";
+  document.getElementById("kpiCuantia").textContent = cuantia.toFixed(0) + " kg/m³";
+
+  // Cuantía promedio del proyecto (por tipo)
+  const totalPeso = DATA[tipo].reduce((s, e) => s + (Number(e.peso) || 0), 0);
+  const totalVol = DATA[tipo].reduce((s, e) => s + (Number(e.volumen) || 0), 0);
+  const prom = totalVol > 0 ? totalPeso / totalVol : 0;
+
+  const diff = ((cuantia - prom) / prom) * 100;
+
+  let txt = diff.toFixed(0) + "%";
+  if (diff > 15) txt = "🔴 " + txt;
+  else if (diff > 5) txt = "🟠 " + txt;
+  else txt = "🟢 " + txt;
+
+  document.getElementById("kpiComparacion").textContent = txt;
+}
 
