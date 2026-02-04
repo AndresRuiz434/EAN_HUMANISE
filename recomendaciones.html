@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <!-- Flecha atrás -->
+  <div class="header-left">
+    <button class="back" onclick="history.back()">←</button>
+    <button class="icon-btn" onclick="window.location.href='app.html'" title="Inicio">🏠</button>
+  </div></div>
+  <!-- Títulos -->
+  <div class="header-center">
+    <h1 id="tituloProyecto"></h1>
+    <h2 id="tituloSeccion">DOCUMENTOS RECOMENDACIONES</h2>
+  </div>
+
+  <!-- Logo -->
+  <div class="header-right">
+    <img src="assets/img/LogoB.png" class="logo">
+  </div>
+</header>
+
+<main class="main-content">
+<section class="contenido">
+
+  <p class="label">Seleccione el documento</p>
+
+  <!-- SELECTOR -->
+ <div class="grid-recomendaciones" id="gridRecomendaciones"></div>
+
+</section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="js/recomendaciones.js"></script>
+
+<script src="js/login.js"></script>
+<script>
+  protegerPagina();
+</script>
+
+</body>
+
+<nav class="side-menu">
+  <a href="parametros.html" title="Parámetros">📋</a>
+    <a href="planos.html" title="Planos"><img src="assets/img/ICONOS/IcoPlano.png" width="20" height="30"></a>
+  <a href="elementos.html?tipo=columnas" title="Columnas"><img src="assets/img/ICONOS/IcoColumna.png" width="20" height="30"></a>
+  <a href="elementos.html?tipo=vigas" title="Vigas"><img src="assets/img/ICONOS/IcoViga.png" width="20" height="30"></a>
+  <a href="elementos.html?tipo=muros" title="Muros"><img src="assets/img/ICONOS/IcoMuro.png" width="20" height="30"></a>
+  <a href="info.html" title="Información">ℹ️</a>
+    
+</nav>
+
+</html>
