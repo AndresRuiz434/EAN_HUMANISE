@@ -40,6 +40,14 @@
   />
 </div>
 
+<!-- Selector Piso (solo columnas y muros) -->
+<div class="selector-piso" id="bloquePiso" style="display:none;">
+  <select id="selectPiso">
+    <option value="TOTAL">Todos los pisos</option>
+  </select>
+</div>
+
+
 <!--Selector-->  
 <div class="selector-elemento">
   <select id="selectElemento">
@@ -49,9 +57,25 @@
 
 
 <!-- DETALLE -->
-<div id="detalle" class="detalle">
-  <p class="muted">Seleccione un elemento</p>
+<div class="detalle-grafica">
+
+  <!-- Detalles -->
+  <div id="detalle" class="detalle">
+    <p class="muted">Seleccione un elemento</p>
+  </div>
+
+  <!-- Gráfica resistencia por piso -->
+  <div class="grafica-resistencia">
+
+  <div class="grafica-header">
+    Distribución de resistencias
+  </div>
+
+  <canvas id="graficaPisos"></canvas>
+
 </div>
+</div>
+
 
 <!-- SELECTOR GRAFICA -->
 <div class="selector-grafica">
@@ -84,7 +108,7 @@
   <a href="elementos.html?tipo=muros" title="Muros"><img src="assets/img/ICONOS/IcoMuro.png" width="20" height="30"></a>
   <a href="planos.html" title="Planos"><img src="assets/img/ICONOS/IcoPlano.png" width="20" height="30"></a>
   <a href="info.html" title="Información">ℹ️</a>
+  <a href="recomendaciones.html" title="Recomendaciones"><img src="assets/img/ICONOS/IcoRecom.png" width="20" height="30"></a>
 </nav>
 
 </html>
-
