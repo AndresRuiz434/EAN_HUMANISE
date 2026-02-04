@@ -142,10 +142,6 @@ body {
     font-size: 13px;
     }
 
-    th, td {
-    padding: 10px 8px;
-    }
-
     .contenedor,
     .content,
     .main {
@@ -425,7 +421,9 @@ th, td {
   padding: 6px 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  vertical-align: middle;
 }
+
 
 th {
   font-size: 14px;
@@ -441,51 +439,21 @@ td {
   margin-top: 40px;
 }
 
-.btn-whatsapp {
-  display: inline-block;
-  background-color: #25D366;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-size: 15px;
-  font-weight: bold;
-  transition: background 0.2s;
-}
-
-.btn-correo {
+.btn {
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: 600;
   text-decoration: none;
-  background-color: #155494;
-  color: white;
-  font-size: 15px;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 6px;
 }
 
-.btn-whatsapp:hover {
-  background-color: #1ebc59;
-}
+.btn-whatsapp { background:#25D366; color:white; }
+.btn-correo { background:#155494; color:white; }
+.btn.bim { background:#1f7ae0; color:white; }
 
-.btn.correo {
-  background-color: #155494;
-}
-
-.btn.bim {
-  padding: 12px 25px;
-  border-radius: 25px;
-  background-color: #1f7ae0; 
-  color: #fff;
-  display: inline-flex;
-  text-decoration: none;
-}
-
-.btn.bim:hover {
-  background-color: #155fb3;
-}
 
 .info-adicional {
     margin-top: 40px;
@@ -521,11 +489,6 @@ td {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  td, th {
-    padding: 6px 10px !important;
-    font-size: 13px;
   }
 
 }
@@ -731,6 +694,174 @@ body.login {
   margin-left: 72px;
 }
 
+.barra-progreso {
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+  padding: 6px 12px;
+}
+
+.bloque-progreso {
+  flex: 1;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.progress {
+  position: relative;
+  background: rgb(255, 255, 255);
+  height: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #1c8ecf;
+  width: 0%;
+  border-radius: 6px;
+  transition: width 0.6s ease;
+}
+
+.progress span {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none !important;
+}
 
 
+/* móvil */
+@media (max-width: 600px) {
+  .barra-progreso {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.bloque-vigas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.detalle-grafica {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+  margin-top: 15px;
+}
+
+.grafica-resistencia {
+  background: white;
+  border-radius: 12px;
+  height: auto;
+  min-height: 200px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.detalle,
+.grafica-resistencia {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.grafica-header {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e0e0e0;
+  text-align: center;
+}
+
+.grafica-resistencia canvas {
+  flex: 1;
+}
+
+
+@media (max-width: 800px) {
+  .detalle-grafica {
+    grid-template-columns: 1fr;
+  }
+
+  .grafica-resistencia {
+    margin-top: 15px;
+  }
+}
+
+.separador {
+  border-top: 1px solid #e0e0e0;
+  margin: 10px 0;
+}
+
+.grid-recomendaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.card-recomendacion {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card-recomendacion:hover {
+  transform: translateY(-4px);
+}
+
+.card-recomendacion .preview {
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.card-recomendacion canvas {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.card-recomendacion .preview embed {
+  width: 120%;
+  height: 120%;
+  border: none;
+  pointer-events: none; 
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+
+
+.card-recomendacion .info {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-recomendacion button {
+  background: #1d680a;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
