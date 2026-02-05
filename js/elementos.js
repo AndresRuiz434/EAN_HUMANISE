@@ -17,6 +17,14 @@ const CAMPOS = {
     plano: "Plano",
     peso: "Peso refuerzo (kg)",
     volumen: "Volumen (m³)"
+  },
+    losas: {
+    piso: "Piso",
+    plano: "Plano",
+    resistencia: "Resistencia (MPa)",
+    area: "Área (m²)",
+    volumen: "Volumen (m³)",
+    peso: "Peso refuerzo (kg)"
   }
 };
 
@@ -103,35 +111,121 @@ buscador.addEventListener("input", e => {
 
 const selectElemento = document.getElementById("selectElemento");
 
+selectElemento.addEventListener("change", e => {
+  const index = e.target.value;
+
+  // Sin selección
+  if (index === "") {
+    detalle.innerHTML = "";
+    return;
+  }
+
+  // Tomar SIEMPRE desde elementos (filtrado)
+  const el = elementos[index];
+
+  if (!el) {
+    console.warn("Elemento no encontrado para índice:", index);
+    return;
+  }
+
+  seleccionarElemento(el);
+});
+
+
+
 function cargarLista() {
+
+  // ===== LOSAS =====
+  if (tipo === "losas") {
+    selectElemento.innerHTML = `<option value="">Seleccione un piso</option>`;
+
+    elementos.forEach((el, i) => {
+      const opt = document.createElement("option");
+      opt.value = i;
+      opt.textContent = el.piso; 
+      selectElemento.appendChild(opt);
+    });
+
+    return;
+  }
+
+  // ===== RESTO =====
   selectElemento.innerHTML =
     `<option value="">Seleccione un ${tipo.slice(0, -1)}</option>`;
 
   elementos.forEach((el, i) => {
-    const nombre =
-      el.id || el["ID Columna"] || el["ID Muro"] || el["ID Viga"];
+    const nombre = el.id || el["ID Columna"] || el["ID Muro"] || el["ID Viga"];
+    const piso = el.piso ? ` (${el.piso})` : "";
 
     const opt = document.createElement("option");
     opt.value = i;
-    opt.textContent = nombre;
+    opt.textContent = nombre + piso;
     selectElemento.appendChild(opt);
   });
 }
 
-selectElemento.addEventListener("change", () => {
-  const idx = selectElemento.value;
-  if (idx === "") return;
-  seleccionarElemento(elementos[idx]);
-});
-
-
 function seleccionarElemento(el) {
   elementoSeleccionado = el;
+
+  if (tipo === "losas") {
+
+    detalle.innerHTML = `
+      <h3>Losa – ${el.piso}</h3>
+
+      <div class="card-detalle">
+        <div class="fila">
+          <span class="label">Plano</span>
+          <span class="valor">${el.plano}</span>
+        </div>
+
+        <div class="fila">
+          <span class="label">Resistencia</span>
+          <span class="valor">${el.resistencia} MPa</span>
+        </div>
+
+        <div class="fila">
+          <span class="label">Área</span>
+          <span class="valor">${el.area} m²</span>
+        </div>
+
+        <div class="fila">
+          <span class="label">Volumen</span>
+          <span class="valor">${el.volumen} m³</span>
+        </div>
+
+        <div class="fila">
+          <span class="label">Peso refuerzo</span>
+          <span class="valor">${el.peso} kg</span>
+        </div>
+
+        <div class="separador"></div>
+
+        <div class="fila">
+          <span class="label">Cuantía (kg/m³)</span>
+          <span class="valor">${(el.peso / el.volumen).toFixed(1)}</span>
+        </div>
+
+        <div class="fila">
+          <span class="label">Cuantía (kg/m²)</span>
+          <span class="valor">${(el.peso / el.area).toFixed(1)}</span>
+        </div>
+
+        <div class="fila">
+          <span class="label">Consumo (m³/m²)</span>
+          <span class="valor">${(el.volumen / el.area).toFixed(3)}</span>
+        </div>
+      </div>
+    `;
+
+    renderGrafica();
+    return; 
+  }
 
   const campos = CAMPOS[tipo];
 
   detalle.innerHTML = `
     <h3>${el.id}</h3>
+
     <div class="card-detalle" id="cardDetalle">
       ${Object.keys(campos)
         .filter(c => {
@@ -147,43 +241,43 @@ function seleccionarElemento(el) {
           </div>
         `)
         .join("")}
-    <div class="separador"></div>
 
-    <div class="fila">
-      <span class="label">Volumen total (m³)</span>
-      <span class="valor" id="kpiVolumen">—</span>
-    </div>
+      <div class="separador"></div>
 
-    <div class="fila">
-      <span class="label">Acero total (kg)</span>
-      <span class="valor" id="kpiPeso">—</span>
-    </div>
+      <div class="fila">
+        <span class="label">Volumen total (m³)</span>
+        <span class="valor" id="kpiVolumen">—</span>
+      </div>
 
-    <div class="fila">
-      <span class="label">Cuantía (kg/m³)</span>
-      <span class="valor" id="kpiCuantia">—</span>
-    </div>
+      <div class="fila">
+        <span class="label">Acero total (kg)</span>
+        <span class="valor" id="kpiPeso">—</span>
+      </div>
 
-    <div class="fila">
-      <span class="label">Comparación</span>
-      <span class="valor" id="kpiComparacion">—</span>
+      <div class="fila">
+        <span class="label">Cuantía (kg/m³)</span>
+        <span class="valor" id="kpiCuantia">—</span>
+      </div>
+
+      <div class="fila">
+        <span class="label">Comparación</span>
+        <span class="valor" id="kpiComparacion">—</span>
+      </div>
     </div>
-  </div>
   `;
 
   renderGrafica();
 
   const piso = selectPiso?.value || "TOTAL";
 
-const registros = DATA[tipo].filter(e =>
-  (piso === "TOTAL" || e.piso === piso) &&
-  e.id === el.id
-);
+  const registros = DATA[tipo].filter(e =>
+    e.id === el.id &&
+    (piso === "TOTAL" || e.piso === piso)
+  );
 
-actualizarKPIs(registros, piso);
-
-
+  actualizarKPIs(registros, piso);
 }
+
 
 function agruparVigasPorPiso(vigas) {
   const resumen = {};
@@ -398,8 +492,9 @@ function renderGraficaResistenciaPorPiso(vigas) {
     },
     options: {
       indexAxis: "x",
-      responsive: false,
+      responsive: true,
       maintainAspectRatio: true,
+      aspectRatio: 0.5,
 
       scales: {
         x: {
@@ -478,21 +573,6 @@ function filtrarPorPiso() {
   cargarLista();
 }
 
-function cargarLista() {
-  selectElemento.innerHTML =
-    `<option value="">Seleccione un ${tipo.slice(0, -1)}</option>`;
-
-  elementos.forEach((el, i) => {
-    const nombre = el.id || el["ID Columna"] || el["ID Muro"] || el["ID Viga"];
-    const piso = el.piso ? ` (${el.piso})` : "";
-
-    const opt = document.createElement("option");
-    opt.value = i;
-    opt.textContent = nombre + piso;
-    selectElemento.appendChild(opt);
-  });
-}
-
 function actualizarKPIs(registrosElemento, pisoSeleccionado) {
 
   // TODOS los registros del elemento (para volumen total)
@@ -536,4 +616,6 @@ function actualizarKPIs(registrosElemento, pisoSeleccionado) {
 
   document.getElementById("kpiComparacion").textContent = txt;
 }
+
+
 
