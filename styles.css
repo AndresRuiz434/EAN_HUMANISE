@@ -450,8 +450,8 @@ td {
   gap: 6px;
 }
 
-.btn-whatsapp { background:#25D366; color:white; }
-.btn-correo { background:#155494; color:white; }
+.btn.whatsapp { background:#25D366; color:white; }
+.btn.correo { background:#155494; color:white; }
 .btn.bim { background:#1f7ae0; color:white; }
 
 
@@ -864,3 +864,4 @@ body.login {
   border-radius: 8px;
   cursor: pointer;
 }
+
