@@ -5229,6 +5229,96 @@
       "peso": 417.733333333333
     }
   ],
+  "losas": [
+    {
+      "piso": "Piso",
+      "plano": "Plano",
+      "resistencia": null,
+      "area": null,
+      "volumen": null,
+      "peso": null
+    },
+    {
+      "piso": "Cimentación",
+      "plano": "EAN-0519-AES-01-EST-CIM-PL-103-6.00",
+      "resistencia": 35,
+      "area": 1050.45,
+      "volumen": 269.2,
+      "peso": 30785
+    },
+    {
+      "piso": "Piso 1",
+      "plano": "EAN-0519-AES-01-EST-N01-PL-108-7.08",
+      "resistencia": 35,
+      "area": 1048.73,
+      "volumen": 197.7,
+      "peso": 13263
+    },
+    {
+      "piso": "Piso 2",
+      "plano": "EAN-0519-AES-01-EST-N02-PL-109-8.00",
+      "resistencia": 35,
+      "area": 603,
+      "volumen": 144.7,
+      "peso": 10125
+    },
+    {
+      "piso": "Piso 3",
+      "plano": "EAN-0519-AES-01-EST-N03-PL-110-9.00",
+      "resistencia": 35,
+      "area": 594,
+      "volumen": 96.8,
+      "peso": 7072
+    },
+    {
+      "piso": "Piso 4",
+      "plano": "EAN-0519-AES-01-EST-N04-PL-111-10.00",
+      "resistencia": 35,
+      "area": 610,
+      "volumen": 99.7,
+      "peso": 7357
+    },
+    {
+      "piso": "Piso 5",
+      "plano": "EAN-0519-AES-01-EST-N05-PL-112-11.00",
+      "resistencia": 35,
+      "area": 596,
+      "volumen": 96.4,
+      "peso": 7130
+    },
+    {
+      "piso": "Piso 6",
+      "plano": "EAN-0519-AES-01-EST-N06-PL-113-12.00",
+      "resistencia": 35,
+      "area": 592,
+      "volumen": 95.4,
+      "peso": 7066
+    },
+    {
+      "piso": "Piso 7",
+      "plano": "EAN-0519-AES-01-EST-N07-PL-114-13.00",
+      "resistencia": 35,
+      "area": 598,
+      "volumen": 96.9,
+      "peso": 6881
+    },
+    {
+      "piso": "Cubierta",
+      "plano": "EAN-0519-AES-01-EST-CUB-PL-115-14.00",
+      "resistencia": 35,
+      "area": 621,
+      "volumen": 143.6,
+      "peso": 9627
+    },
+    {
+      "piso": "Cub Maq",
+      "plano": "EAN-0519-AES-01-EST-SCU-PL-116-15.00",
+      "resistencia": 35,
+      "area": 76,
+      "volumen": 19.2,
+      "peso": 1573
+    }
+  ],
   "parametros": [
     {
       "caracteristica": "Localización:",
@@ -5352,7 +5442,7 @@
     },
     {
       "documento": "Anclajes epóxicos",
-      "pdf": "Anclajes epoxicos.pdf"
+      "pdf": "Anclajes epóxicos.pdf"
     },
     {
       "documento": "Discos de anclaje",
@@ -5360,8 +5450,10 @@
     },
     {
       "documento": "Empalmes mecánicos",
-      "pdf": "Empalmes mecanicos.pdf"
+      "pdf": "Empalmes mecánicos.pdf"
     }
   ]
 }
+
+
 
