@@ -18,7 +18,7 @@
   <!-- Títulos -->
   <div class="header-center">
     <h1 id="tituloProyecto"></h1>
-    <h2 id="tituloSeccion">DOCUMENTOS RECOMENDACIONES</h2>
+    <h2 id="tituloSeccion">INFORMES TÉCNICOS</h2>
   </div>
 
   <!-- Logo -->
@@ -46,11 +46,29 @@
   protegerPagina();
 </script>
 
+<!-- VISOR PDF FULLSCREEN -->
+<div id="visorOverlay" class="visor-overlay" style="display:none;">
+  <div class="visor-header">
+    <span id="visorTitulo"></span>
+    <button onclick="cerrarVisor()">✕</button>
+  </div>
+
+  <iframe
+    id="visorPDF"
+    src=""
+    frameborder="0">
+  </iframe>
+</div>
+
+<footer class="marca-footer">
+  Aycardi Estructural © 2026
+</footer>
+
 </body>
 
 <nav class="side-menu">
   <a href="parametros.html" title="Parámetros">📋</a>
-    <a href="planos.html" title="Planos"><img src="assets/img/ICONOS/IcoPlano.png" width="20" height="30"></a>
+<a href="planos.html" title="Planos"><img src="assets/img/ICONOS/IcoPlano.png" width="20" height="30"></a>
   <a href="elementos.html?tipo=columnas" title="Columnas"><img src="assets/img/ICONOS/IcoColumna.png" width="20" height="30"></a>
   <a href="elementos.html?tipo=vigas" title="Vigas"><img src="assets/img/ICONOS/IcoViga.png" width="20" height="30"></a>
   <a href="elementos.html?tipo=muros" title="Muros"><img src="assets/img/ICONOS/IcoMuro.png" width="20" height="30"></a>
@@ -59,3 +77,4 @@
 </nav>
 
 </html>
+
