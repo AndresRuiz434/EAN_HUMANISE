@@ -19,7 +19,7 @@ fetch("data/datos.json")
         </div>
         <div class="info">
           <h4>${rec.documento}</h4>
-          <button onclick="window.open('recomendaciones/${rec.pdf}', '_blank')">
+          <button onclick="verPDF('${rec.pdf}', '${rec.documento}')">
             Ver PDF
           </button>
         </div>
@@ -61,8 +61,35 @@ function mostrarDoc(r) {
     "recomendaciones/" + r.pdf;
 }
 
-/* BOTÓN ABRIR PDF */
+
 function abrirPDFCompleto() {
   const pdf = document.getElementById("visorPDF").src;
   if (pdf) window.open(pdf, "_blank");
 }
+
+function verPDF(pdf, titulo) {
+  const overlay = document.getElementById("visorOverlay");
+  const iframe = document.getElementById("visorPDF");
+
+  document.getElementById("visorTitulo").textContent = titulo;
+
+  // Oculta toolbar y opciones de descarga
+  iframe.src = `recomendaciones/${pdf}#toolbar=0&navpanes=0&scrollbar=0`;
+
+  overlay.style.display = "flex";
+}
+
+function cerrarVisor() {
+  const overlay = document.getElementById("visorOverlay");
+  const iframe = document.getElementById("visorPDF");
+
+  iframe.src = ""; // limpia
+  overlay.style.display = "none";
+}
+
+document.addEventListener("contextmenu", e => {
+  if (document.getElementById("visorOverlay").style.display === "flex") {
+    e.preventDefault();
+  }
+});
+
