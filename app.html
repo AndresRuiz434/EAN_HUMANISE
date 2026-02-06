@@ -27,66 +27,78 @@
 </header>
 
 <div id="barraProgreso" class="barra-progreso hidden">
-  <div class="bloque-progreso">
-    <span>Control Documental</span>
-    <div class="progress">
-      <div id="progDiseno" class="progress-fill"></div>
-      <span id="txtDiseno">0%</span>
-    </div>
+
+  <div class="bloque-donut">
+    <canvas id="donutDiseno" width="90" height="90"></canvas>
+    <span>Control documental</span>
   </div>
 
-  <div class="bloque-progreso">
-    <span>Avance Modelación BIM</span>
-    <div class="progress">
-      <div id="progDibujo" class="progress-fill"></div>
-      <span id="txtDibujo">0%</span>
-    </div>
+  <div class="bloque-donut">
+    <canvas id="donutDibujo" width="90" height="90"></canvas>
+    <span>Avance modelación BIM</span>
   </div>
+
 </div>
 
 
+
 <!-- MENÚ -->
-<main class="menu">
+<main>
 
-    <a class="card" href="planos.html">
-        <img src="assets/img/Planos.png">
-        <span>Planos</span>
-    </a>
+  <div class="menu-seccion">
+    <h3 class="menu-titulo">Documentación</h3>
+    <div class="menu-grid">
+      <a class="card" href="planos.html" data-seccion="base">
+          <img src="assets/img/Planos.png">
+          <span>Planos</span>
+      </a>
 
-    <a class="card" href="elementos.html?tipo=columnas">
-        <img src="assets/img/columnas.png">
-        <span>Columnas</span>
-    </a>
+      <a class="card" href="parametros.html" data-seccion="base">
+          <img src="assets/img/Modelo3D.png">
+          <span>Parámetros de diseño</span>
+      </a>    
+    </div>
+  </div>
 
-    <a class="card" href="elementos.html?tipo=muros">
-        <img src="assets/img/muros.png">
-        <span>Muros</span>
-    </a>
+  <div class="menu-seccion">
+    <h3 class="menu-titulo">Elementos estructurales</h3>
+    <div class="menu-grid">
+      <a class="card" href="elementos.html?tipo=columnas" data-seccion="estructural">
+          <img src="assets/img/columnas.png">
+          <span>Columnas</span>
+      </a>
 
-    <a class="card" href="elementos.html?tipo=vigas">
-        <img src="assets/img/vigas.png">
-        <span>Vigas</span>
-    </a>
+      <a class="card" href="elementos.html?tipo=muros" data-seccion="estructural">
+          <img src="assets/img/muros.png">
+          <span>Muros</span>
+      </a>
 
-    <a class="card" href="elementos.html?tipo=losas">
-        <img src="assets/img/losa.png">
-        <span>Losas</span>
-    </a>
+      <a class="card" href="elementos.html?tipo=vigas" data-seccion="estructural">
+          <img src="assets/img/vigas.png">
+          <span>Vigas</span>
+      </a>
 
-    <a class="card" href="parametros.html">
-        <img src="assets/img/Modelo3D.png">
-        <span>Parámetros de diseño</span>
-    </a>
+      <a class="card" href="elementos.html?tipo=losas" data-seccion="estructural">
+          <img src="assets/img/losa.png">
+          <span>Losas</span>
+      </a>
+    </div>
+  </div>
 
-    <a class="card" href="info.html">
-        <img src="assets/img/Modelo3D.png">
-        <span>Información adicional</span>
-    </a>
+  <div class="menu-seccion">
+    <h3 class="menu-titulo">Información adicional</h3>
+    <div class="menu-grid">
+      <a class="card" href="info.html" data-seccion="info">
+          <img src="assets/img/Modelo3D.png">
+          <span>Información adicional</span>
+      </a>
 
-    <a class="card" href="recomendaciones.html">
-        <img src="assets/img/Logo.png">
-        <span>Recomendaciones</span>
-    </a>
+      <a class="card" href="recomendaciones.html" data-seccion="documentos">
+          <img src="assets/img/Logo.png">
+          <span>Informes técnicos</span>
+      </a>
+    </div>
+  </div>
 
 </main>
 
@@ -98,6 +110,14 @@
   protegerPagina();
 </script>
 
+<footer class="marca-footer">
+  Aycardi Estructural © 2026
+</footer>
+
 </body>
 </html>
+
+</body>
+</html>
+
 
