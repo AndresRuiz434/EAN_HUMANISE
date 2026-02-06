@@ -17,6 +17,30 @@ fetch("data/datos.json")
   });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+
+  const rol = localStorage.getItem("rol") || "externo";
+  console.log("Rol activo:", rol);
+
+  if (rol === "interno") {
+    document
+      .querySelectorAll('[data-seccion="estructural"], [data-seccion="info"]')
+      .forEach(el => el.style.display = "none");
+  }
+
+  document.querySelectorAll(".menu-seccion").forEach(seccion => {
+    const visibles = seccion.querySelectorAll(
+      ".card:not([style*='display: none'])"
+    );
+
+    if (visibles.length === 0) {
+      seccion.style.display = "none";
+    }
+});
+
+});
+
+
 function mostrarVista(id) {
   document.querySelectorAll(".view").forEach(v => v.classList.add("hidden"));
   document.getElementById(id).classList.remove("hidden");
@@ -32,11 +56,10 @@ function abrirSeccion(tipo) {
   renderLista(elementos);
 }
 
-
 function configurarBarraProgreso(info) {
-  const rol = localStorage.getItem("rol");
 
-  // Solo usuarios internos
+  const rol = localStorage.getItem("rol") || "cliente";
+
   if (rol !== "interno") return;
 
   const barra = document.getElementById("barraProgreso");
@@ -44,14 +67,47 @@ function configurarBarraProgreso(info) {
 
   barra.classList.remove("hidden");
 
-  const diseno = info.progresoDiseno ?? 0;
-  const dibujo = info.progresoDibujo ?? 0;
+  const progresoDiseno = Number(info.progresoDiseno || 0);
+  const progresoDibujo = Number(info.progresoDibujo || 0);
 
-  document.getElementById("progDiseno").style.width = diseno + "%";
-  document.getElementById("txtDiseno").textContent = diseno + "%";
+  dibujarDonut("donutDiseno", progresoDiseno, "#2563eb");
+  dibujarDonut("donutDibujo", progresoDibujo, "#16a34a");
+}
 
-  document.getElementById("progDibujo").style.width = dibujo + "%";
-  document.getElementById("txtDibujo").textContent = dibujo + "%";
+
+function dibujarDonut(canvasId, porcentaje, color) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+  const r = canvas.width / 2;
+  const center = r;
+  const inicio = -Math.PI / 2;
+  const angulo = (porcentaje / 100) * 2 * Math.PI;
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Fondo
+  ctx.beginPath();
+  ctx.arc(center, center, r - 6, 0, 2 * Math.PI);
+  ctx.strokeStyle = "#e5e7eb";
+  ctx.lineWidth = 8;
+  ctx.stroke();
+
+  // Progreso
+  ctx.beginPath();
+  ctx.arc(center, center, r - 6, inicio, inicio + angulo);
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 8;
+  ctx.lineCap = "round";
+  ctx.stroke();
+
+  // Texto %
+  ctx.fillStyle = "#111";
+  ctx.font = "bold 14px sans-serif";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(`${porcentaje}%`, center, center);
 }
 
 
@@ -116,5 +172,7 @@ function cambiarTipo(nuevoTipo) {
   renderLista(elementos);
   limpiarDetalle();
 }
+
+
 
 
