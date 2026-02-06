@@ -245,7 +245,7 @@ function seleccionarElemento(el) {
       <div class="separador"></div>
 
       <div class="fila">
-        <span class="label">Volumen total (m³)</span>
+        <span class="label">Volumen piso seleccionado (m³)</span>
         <span class="valor" id="kpiVolumen">—</span>
       </div>
 
@@ -255,7 +255,7 @@ function seleccionarElemento(el) {
       </div>
 
       <div class="fila">
-        <span class="label">Cuantía (kg/m³)</span>
+        <span class="label">Cuantía promedio(kg/m³)</span>
         <span class="valor" id="kpiCuantia">—</span>
       </div>
 
@@ -270,12 +270,41 @@ function seleccionarElemento(el) {
 
   const piso = selectPiso?.value || "TOTAL";
 
-  const registros = DATA[tipo].filter(e =>
-    e.id === el.id &&
-    (piso === "TOTAL" || e.piso === piso)
+  let registros;
+
+  if (tipo === "vigas") {
+    // 👉 SOLO la viga seleccionada
+    registros = [el];
+  } else {
+    registros = DATA[tipo].filter(e =>
+      e.id === el.id &&
+      (piso === "TOTAL" || e.piso === piso)
+    );
+  }
+
+actualizarKPIs(registros, piso);
+
+  if (tipo === "vigas") {
+  const aceroPiso = obtenerAceroTotalVigasPorPiso(el.piso);
+
+  document.getElementById("kpiPeso").textContent =
+    aceroPiso.toFixed(1) + " kg";
+
+  document.querySelector(
+    '.fila .label:contains("Acero")'
   );
+}
+
 
   actualizarKPIs(registros, piso);
+}
+
+
+if (tipo === "vigas") {
+  const aceroPiso = obtenerAceroTotalVigasPorPiso(el.piso);
+
+  document.getElementById("kpiPeso").textContent =
+    `${aceroPiso.toFixed(1)} kg`;
 }
 
 
@@ -297,6 +326,19 @@ function agruparVigasPorPiso(vigas) {
   });
 
   return resumen;
+}
+
+function obtenerAceroTotalVigasPorPiso(piso) {
+  const vigasPiso = DATA.vigas.filter(v =>
+    v.piso === piso &&
+    v.peso !== undefined &&
+    v.peso !== null &&
+    v.peso !== "" &&
+    !isNaN(Number(v.peso))
+  );
+
+  // El acero total del piso viene solo en UNA viga
+  return vigasPiso.length > 0 ? Number(vigasPiso[0].peso) : 0;
 }
 
 
@@ -333,7 +375,7 @@ function renderGrafica() {
   chart = new Chart(ctx, {
     type: "bar",
     data: {
-      labels: [nombreElemento, "Resto del proyecto"],
+      labels: [nombreElemento, "Total del proyecto"],
       datasets: [{
         data: [valorElemento, resto],
         backgroundColor: [
@@ -371,9 +413,13 @@ function renderGraficaVigasPorPiso(campo) {
   const pisoSeleccionado = elementoSeleccionado.piso;
 
   // Suma vigas SOLO del piso seleccionado
-  const sumaPiso = DATA.vigas
-    .filter(v => v.piso === pisoSeleccionado)
-    .reduce((s, v) => s + (Number(v[campo]) || 0), 0);
+  const sumaPiso =
+    campo === "peso"
+      ? obtenerAceroTotalVigasPorPiso(pisoSeleccionado)
+      : DATA.vigas
+          .filter(v => v.piso === pisoSeleccionado)
+          .reduce((s, v) => s + (Number(v[campo]) || 0), 0);
+
 
   // Total del proyecto (igual que columnas/muros)
   const totalProyecto =
@@ -390,8 +436,8 @@ function renderGraficaVigasPorPiso(campo) {
     type: "bar",
     data: {
       labels: [
-        `Piso ${pisoSeleccionado}`,
-        "Resto del proyecto"
+        `Vigas Piso ${pisoSeleccionado}`,
+        "Total del proyecto"
       ],
       datasets: [{
         data: [sumaPiso, restoProyecto],
@@ -422,6 +468,45 @@ function renderGraficaVigasPorPiso(campo) {
     }
   });
 }
+
+
+function obtenerOrdenPiso(piso) {
+  if (!piso) return 999;
+
+  const p = piso.toString().toLowerCase();
+
+  // Sótanos y cimentación
+  if ( 
+    p.includes("sot") ||
+    p.includes("b") && /\d/.test(p) ||
+    p.includes("cim") ||
+    p.includes("ciment") ||
+    p.includes("base")
+  ) {
+    // Extrae número si existe (B2, SOT1, etc.)
+    const num = parseInt(p.match(/\d+/)?.[0] || "0", 10);
+    return -100 + num * -1;
+  }
+
+  // Pisos normales
+  if (p.includes("piso")) {
+    const num = parseInt(p.match(/\d+/)?.[0] || "0", 10);
+    return num;
+  }
+
+  // Cubiertas
+  if (
+    p.includes("cubierta") ||
+    p.includes("cub") ||
+    p.includes("maq")
+  ) {
+    return 1000;
+  }
+
+  // Otros (por seguridad)
+  return 500;
+}
+
 
 function colorPorResistencia(r) {
   if (r <= 21) return "#0019FF"; 
@@ -462,7 +547,9 @@ function renderGraficaResistenciaPorPiso(vigas) {
   });
 
   // 3. Ordenar pisos
-  const pisos = Object.keys(porPiso).sort((a, b) => pisoIndex(a) - pisoIndex(b));
+  const pisos = [...new Set(datos.map(d => d.piso))]
+    .sort((a, b) => obtenerOrdenPiso(a) - obtenerOrdenPiso(b));
+
 
   // 4. Crear datasets (uno por piso)
   const datasets = pisos.map(piso => {
@@ -575,47 +662,103 @@ function filtrarPorPiso() {
 
 function actualizarKPIs(registrosElemento, pisoSeleccionado) {
 
-  // TODOS los registros del elemento (para volumen total)
-  const todos = DATA[tipo].filter(e => e.id === registrosElemento[0].id);
+  let volumenTotal = 0;   // para cuantía
+  let volumenPiso = 0;    // para mostrar
+  let acero = 0;
 
-  // Registros SOLO del piso seleccionado
-  const piso = pisoSeleccionado === "TOTAL"
-    ? todos
-    : todos.filter(e => e.piso === pisoSeleccionado);
+  if (tipo === "vigas") {
 
-  // Volúmenes
-  const volumenTotal = todos.reduce((s, e) => s + (Number(e.volumen) || 0), 0);
-  const volumenPiso = piso.reduce((s, e) => s + (Number(e.volumen) || 0), 0);
+    const piso = registrosElemento[0]?.piso;
 
-  // Acero → se toma UNA sola vez
-  const acero = Number(
-    todos.find(e => e.peso && Number(e.peso) > 0)?.peso || 0
-  );
+    // 🔹 Volumen TOTAL de vigas del piso (para cuantía promedio)
+    volumenTotal = DATA.vigas
+      .filter(v => v.piso === piso)
+      .reduce((s, v) => s + (Number(v.volumen) || 0), 0);
 
-  // Cuantía REAL del elemento
+    // 🔹 Volumen de la(s) viga(s) seleccionada(s) (dato geométrico)
+    volumenPiso = registrosElemento.reduce(
+      (s, v) => s + (Number(v.volumen) || 0), 0
+    );
+
+    // 🔹 Acero TOTAL del piso (una sola vez)
+    acero = obtenerAceroTotalVigasPorPiso(piso);
+
+  } else {
+
+    const id = registrosElemento[0].id;
+
+    const todos = DATA[tipo].filter(e => e.id === id);
+
+    const pisoRegs = pisoSeleccionado === "TOTAL"
+      ? todos
+      : todos.filter(e => e.piso === pisoSeleccionado);
+
+    // 🔹 Volumen total del elemento
+    volumenTotal = todos.reduce(
+      (s, e) => s + (Number(e.volumen) || 0), 0
+    );
+
+    // 🔹 Volumen del piso seleccionado
+    volumenPiso = pisoRegs.reduce(
+      (s, e) => s + (Number(e.volumen) || 0), 0
+    );
+
+    // 🔹 Acero total del elemento (una sola vez)
+    acero = Number(
+      todos.find(e => e.peso && Number(e.peso) > 0)?.peso || 0
+    );
+  }
+
   const cuantia = volumenTotal > 0 ? acero / volumenTotal : 0;
 
-  // Mostrar
   document.getElementById("kpiVolumen").textContent =
-    (pisoSeleccionado === "TOTAL" ? volumenTotal : volumenPiso).toFixed(2) + " m³";
+    volumenPiso > 0 ? volumenPiso.toFixed(2) + " m³" : "—";
 
-  document.getElementById("kpiPeso").textContent = acero.toFixed(1) + " kg";
-  document.getElementById("kpiCuantia").textContent = cuantia.toFixed(0) + " kg/m³";
+  document.getElementById("kpiPeso").textContent =
+    acero > 0 ? acero.toFixed(1) + " kg" : "—";
 
-  // Cuantía promedio del proyecto (por tipo)
-  const totalPeso = DATA[tipo].reduce((s, e) => s + (Number(e.peso) || 0), 0);
-  const totalVol = DATA[tipo].reduce((s, e) => s + (Number(e.volumen) || 0), 0);
-  const prom = totalVol > 0 ? totalPeso / totalVol : 0;
+  document.getElementById("kpiCuantia").textContent =
+    cuantia > 0 ? cuantia.toFixed(0) + " kg/m³" : "—";
 
-  const diff = ((cuantia - prom) / prom) * 100;
+  let totalPesoProyecto = 0;
+  let totalVolProyecto = 0;
+
+  if (tipo === "vigas") {
+
+    const pisos = [...new Set(DATA.vigas.map(v => v.piso))];
+
+    totalPesoProyecto = pisos.reduce(
+      (s, p) => s + obtenerAceroTotalVigasPorPiso(p), 0
+    );
+
+    totalVolProyecto = DATA.vigas.reduce(
+      (s, v) => s + (Number(v.volumen) || 0), 0
+    );
+
+  } else {
+
+    totalPesoProyecto = DATA[tipo].reduce(
+      (s, e) => s + (Number(e.peso) || 0), 0
+    );
+
+    totalVolProyecto = DATA[tipo].reduce(
+      (s, e) => s + (Number(e.volumen) || 0), 0
+    );
+  }
+
+  const prom = totalVolProyecto > 0
+    ? totalPesoProyecto / totalVolProyecto
+    : 0;
+
+  const diff = prom > 0 ? ((cuantia - prom) / prom) * 100 : 0;
 
   let txt = diff.toFixed(0) + "%";
   if (diff > 15) txt = "🔴 " + txt;
   else if (diff > 5) txt = "🟠 " + txt;
   else txt = "🟢 " + txt;
 
-  document.getElementById("kpiComparacion").textContent = txt;
+  document.getElementById("kpiComparacion").textContent =
+    cuantia > 0 ? txt : "—";
 }
-
 
 
