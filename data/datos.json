@@ -18,12 +18,12 @@
       "pdf": "Plano.pdf"
     },
     {
-      "plano": "EAN-0519-AES-01-EST-PL-601-1.00",
+      "plano": "EAN-0519-AES-01-EST-PL-601-01.00",
       "numero": "1",
       "version": 0,
       "fecha": 46059,
       "contenido": "ESQUEMA 3D Y ESPECIFICACIONES",
-      "pdf": "EAN-0519-AES-01-EST-PL-601-1.00.pdf"
+      "pdf": "EAN-0519-AES-01-EST-PL-601-01.00.pdf"
     },
     {
       "plano": "EAN-0519-AES-01-EST-PL-201-01.01",
@@ -5454,6 +5454,7 @@
     }
   ]
 }
+
 
 
 
