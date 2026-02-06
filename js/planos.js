@@ -64,3 +64,29 @@ function abrirPDFCompleto() {
   const pdf = document.getElementById("visorPDF").src;
   if (pdf) window.open(pdf, "_blank");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const rol = (localStorage.getItem("rol") || "")
+    .toLowerCase()
+    .trim();
+
+  if (rol === "interno") {
+
+    document.querySelectorAll(".side-menu a").forEach(link => {
+      const href = link.getAttribute("href") || "";
+
+      // Ocultar elementos estructurales
+      if (
+        href.includes("elementos.html?tipo=columnas") ||
+        href.includes("elementos.html?tipo=vigas") ||
+        href.includes("elementos.html?tipo=muros") ||
+        href.includes("elementos.html?tipo=losas") ||
+        href.includes("info.html")
+      ) {
+        link.style.display = "none";
+      }
+    });
+  }
+
+});
