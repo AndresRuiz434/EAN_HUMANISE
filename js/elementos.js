@@ -351,96 +351,79 @@ function renderGrafica() {
   if (!elementoSeleccionado) return;
 
   const campo = tipoGrafica.value;
-
-  if (tipo === "vigas") {
-  renderGraficaVigasPorPiso(campo);
-  return;
-    }
-
-
-  // SUMA TODO EL PROYECTO
-  const totalProyecto =
-    [...DATA.columnas, ...DATA.muros, ...DATA.vigas]
-      .reduce((s, e) => s + (Number(e[campo]) || 0), 0);
-
-  const valorElemento = Number(elementoSeleccionado[campo]) || 0;
-  const resto = totalProyecto;
-  const nombreElemento = elementoSeleccionado.id;
-  const maxValor = Math.max(valorElemento,totalProyecto);
-
   const ctx = document.getElementById("grafica");
+  if (!ctx) return;
 
   if (chart) chart.destroy();
+
+  let valorUnidad = 0;
+  let labelUnidad = "";
+
+  const pisoSel = selectPiso?.value || "TOTAL";
+
+  // ===== COLUMNAS / MUROS =====
+  if (tipo === "columnas" || tipo === "muros") {
+
+    const id = elementoSeleccionado.id;
+
+    // 🔹 Volumen → del piso seleccionado
+    if (campo === "volumen") {
+      valorUnidad = DATA[tipo]
+        .filter(e =>
+          e.id === id &&
+          (pisoSel === "TOTAL" || e.piso === pisoSel)
+        )
+        .reduce((s, e) => s + (Number(e.volumen) || 0), 0);
+
+      labelUnidad = pisoSel === "TOTAL"
+        ? `${id} (todos los pisos)`
+        : `${id} – Piso ${pisoSel}`;
+    }
+
+    // 🔹 Peso → total del elemento
+    if (campo === "peso") {
+      valorUnidad = Number(
+        DATA[tipo].find(e => e.id === id && e.peso)?.peso || 0
+      );
+
+      labelUnidad = `${id} – Total`;
+    }
+  }
+
+  // ===== VIGAS =====
+  else if (tipo === "vigas") {
+    const piso = elementoSeleccionado.piso;
+
+    valorUnidad =
+      campo === "peso"
+        ? obtenerAceroTotalVigasPorPiso(piso)
+        : DATA.vigas
+            .filter(v => v.piso === piso)
+            .reduce((s, v) => s + (Number(v.volumen) || 0), 0);
+
+    labelUnidad = `Vigas Piso ${piso}`;
+  }
+
+  // ===== LOSAS =====
+  else if (tipo === "losas") {
+    const piso = elementoSeleccionado.piso;
+
+    valorUnidad = DATA.losas
+      .filter(l => l.piso === piso)
+      .reduce((s, l) => s + (Number(l[campo]) || 0), 0);
+
+    labelUnidad = `Losa Piso ${piso}`;
+  }
+
+  const totalProyecto = obtenerTotalProyectoPorTipo(campo);
+  const maxValor = Math.max(valorUnidad, totalProyecto);
 
   chart = new Chart(ctx, {
     type: "bar",
     data: {
-      labels: [nombreElemento, "Total del proyecto"],
+      labels: [labelUnidad,  `Total proyecto (${tipo})`],
       datasets: [{
-        data: [valorElemento, resto],
-        backgroundColor: [
-          "#30ad36",   // verde → elemento
-          "#9e9e9e"    // gris → proyecto
-        ],
-        borderRadius: 8
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { display: false },
-        datalabels: {
-            anchor: "end",
-            align: "top",
-            formatter: value => {
-                const unidad = campo === "peso" ? " kg" : " m³";
-                return value.toFixed(1) + unidad;
-            },
-            font: {
-                weight: "bold"
-            }
-        }
-    },
-
-      scales: {
-        y: { beginAtZero: true, suggestedMax: maxValor * 1.15 }
-      }
-    }
-  });
-}
-
-function renderGraficaVigasPorPiso(campo) {
-  const pisoSeleccionado = elementoSeleccionado.piso;
-
-  // Suma vigas SOLO del piso seleccionado
-  const sumaPiso =
-    campo === "peso"
-      ? obtenerAceroTotalVigasPorPiso(pisoSeleccionado)
-      : DATA.vigas
-          .filter(v => v.piso === pisoSeleccionado)
-          .reduce((s, v) => s + (Number(v[campo]) || 0), 0);
-
-
-  // Total del proyecto (igual que columnas/muros)
-  const totalProyecto =
-    [...DATA.columnas, ...DATA.muros, ...DATA.vigas]
-      .reduce((s, e) => s + (Number(e[campo]) || 0), 0);
-
-  const restoProyecto = totalProyecto;
-  const maxValor = Math.max(sumaPiso, totalProyecto);
-
-  const ctx = document.getElementById("grafica");
-  if (chart) chart.destroy();
-
-  chart = new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: [
-        `Vigas Piso ${pisoSeleccionado}`,
-        "Total del proyecto"
-      ],
-      datasets: [{
-        data: [sumaPiso, restoProyecto],
+        data: [valorUnidad, totalProyecto],
         backgroundColor: ["#30ad36", "#9e9e9e"],
         borderRadius: 8
       }]
@@ -452,9 +435,9 @@ function renderGraficaVigasPorPiso(campo) {
         datalabels: {
           anchor: "end",
           align: "top",
-          formatter: value => {
-            const unidad = campo === "peso" ? " kg" : " m³";
-            return value.toFixed(1) + unidad;
+          formatter: v => {
+            const u = campo === "peso" ? " kg" : " m³";
+            return v.toFixed(1) + u;
           },
           font: { weight: "bold" }
         }
@@ -468,6 +451,7 @@ function renderGraficaVigasPorPiso(campo) {
     }
   });
 }
+
 
 
 function obtenerOrdenPiso(piso) {
@@ -761,4 +745,30 @@ function actualizarKPIs(registrosElemento, pisoSeleccionado) {
     cuantia > 0 ? txt : "—";
 }
 
+function obtenerTotalProyectoPorTipo(campo) {
+
+  if (tipo === "vigas") {
+    if (campo === "peso") {
+      const pisos = [...new Set(DATA.vigas.map(v => v.piso))];
+      return pisos.reduce(
+        (s, p) => s + obtenerAceroTotalVigasPorPiso(p), 0
+      );
+    }
+
+    return DATA.vigas.reduce(
+      (s, v) => s + (Number(v[campo]) || 0), 0
+    );
+  }
+
+  if (tipo === "losas") {
+    return DATA.losas.reduce(
+      (s, l) => s + (Number(l[campo]) || 0), 0
+    );
+  }
+
+  // columnas / muros
+  return DATA[tipo].reduce(
+    (s, e) => s + (Number(e[campo]) || 0), 0
+  );
+}
 
