@@ -936,3 +936,35 @@ body.login {
   letter-spacing: 0.4px;
   z-index: 1000;
 }
+
+.visor-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.visor-header {
+  flex: 0 0 auto;
+  background: #111;
+  color: white;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visor-body {
+  flex: 1 1 auto;
+  overflow-y: auto;                 
+  -webkit-overflow-scrolling: touch;
+}
+
+.visor-body iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
