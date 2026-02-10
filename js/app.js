@@ -41,11 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-function mostrarVista(id) {
-  document.querySelectorAll(".view").forEach(v => v.classList.add("hidden"));
-  document.getElementById(id).classList.remove("hidden");
-}
-
 function abrirSeccion(tipo) {
   tipoActivo = tipo;
   elementos = DATA[tipo];
@@ -111,11 +106,6 @@ function dibujarDonut(canvasId, porcentaje, color) {
 }
 
 
-function volverMenu() {
-  mostrarVista("menuView");
-}
-
-
 let tablaActual = "Columnas";
 
 const lista = document.getElementById("listaElementos");
@@ -138,15 +128,6 @@ function renderLista(data) {
   });
 }
 
-function mostrarDetalle(el) {
-  detalle.innerHTML = `
-    <h3>Elemento ${el["ID Columna"]}</h3>
-    <p><b>Sección:</b> ${el["Sección"]}</p>
-    <p><b>Cantidad:</b> ${el["Cantidad"]}</p>
-    <p><b>Resistencia:</b> ${el["Resistencia (MPa)"]} MPa</p>
-    <p><b>Plano:</b> ${el["Plano"]}</p>
-  `;
-}
 
 inputBusqueda.addEventListener("input", () => {
   const texto = inputBusqueda.value.toLowerCase();
@@ -160,18 +141,6 @@ inputBusqueda.addEventListener("input", () => {
 
   renderLista(filtrados);
 });
-
-renderLista(elementos);
-
-function cambiarTipo(nuevoTipo) {
-  tipoActivo = nuevoTipo;
-  elementos = DATA[tipoActivo];
-
-  document.getElementById("tituloSeccion").innerText = tipoActivo;
-
-  renderLista(elementos);
-  limpiarDetalle();
-}
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -198,5 +167,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btnCerrar = document.getElementById("btnCerrarSesion");
+
+  if (btnCerrar) {
+    btnCerrar.addEventListener("click", () => {
+
+      // Limpiar sesión
+      localStorage.removeItem("rol");
+      localStorage.removeItem("usuario");
+
+      // Volver a login
+      window.location.href = "index.html";
+    });
+  }
+
+});
+
+
+
+});
+
 
 
