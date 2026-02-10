@@ -8,7 +8,24 @@ fetch("data/datos.json")
 
     PLANOS = data.planos;
     cargarSelector();
+
+    const planoURL = obtenerPlanoDesdeURL();
+
+    if (planoURL) {
+      const planoBuscado = planoURL.trim().toLowerCase();
+
+      const index = PLANOS.findIndex(p =>
+        String(p.plano).trim().toLowerCase() === planoBuscado
+      );
+
+      if (index >= 0) {
+        const sel = document.getElementById("selectorPlanos");
+        sel.value = index;
+        mostrarPlano(PLANOS[index]);
+      }
+    }
   });
+
 
 function cargarSelector() {
   const sel = document.getElementById("selectorPlanos");
@@ -90,3 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+function obtenerPlanoDesdeURL() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("plano");
+}
