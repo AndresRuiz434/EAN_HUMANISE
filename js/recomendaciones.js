@@ -67,31 +67,43 @@ function abrirPDFCompleto() {
   if (pdf) window.open(pdf, "_blank");
 }
 
-function verPDF(pdf, titulo) {
+async function verPDF(pdf, titulo) {
   const overlay = document.getElementById("visorOverlay");
-  const iframe = document.getElementById("visorPDF");
+  const container = document.getElementById("pdfCanvasContainer");
 
   document.getElementById("visorTitulo").textContent = titulo;
-
-  // Oculta toolbar y opciones de descarga
-  iframe.src = `recomendaciones/${pdf}#toolbar=0&navpanes=0&scrollbar=0`;
+  container.innerHTML = ""; 
 
   overlay.style.display = "flex";
+
+  const loadingTask = pdfjsLib.getDocument(`recomendaciones/${pdf}`);
+  const pdfDoc = await loadingTask.promise;
+
+  for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+    const page = await pdfDoc.getPage(pageNum);
+    const viewport = page.getViewport({ scale: 1.2 });
+
+    const canvas = document.createElement("canvas");
+    canvas.className = "pdf-page";
+
+    const ctx = canvas.getContext("2d");
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+
+    container.appendChild(canvas);
+
+    await page.render({
+      canvasContext: ctx,
+      viewport
+    }).promise;
+  }
 }
 
 function cerrarVisor() {
-  const overlay = document.getElementById("visorOverlay");
-  const iframe = document.getElementById("visorPDF");
-
-  iframe.src = ""; // limpia
-  overlay.style.display = "none";
+  document.getElementById("visorOverlay").style.display = "none";
+  document.getElementById("pdfCanvasContainer").innerHTML = "";
 }
 
-document.addEventListener("contextmenu", e => {
-  if (document.getElementById("visorOverlay").style.display === "flex") {
-    e.preventDefault();
-  }
-});
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -118,4 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+});
+
 
