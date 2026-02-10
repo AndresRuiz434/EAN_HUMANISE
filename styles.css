@@ -960,11 +960,18 @@ body.login {
   flex: 1 1 auto;
   overflow-y: auto;                 
   -webkit-overflow-scrolling: touch;
+  flex: 1;
+  background: #000;
 }
 
 .visor-body iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.pdf-page {
+  display: block;
+  margin: 0 auto 20px;
 }
 
