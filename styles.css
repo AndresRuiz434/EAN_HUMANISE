@@ -937,6 +937,27 @@ body.login {
   z-index: 1000;
 }
 
+.side-menu a#btnCerrarSesion {
+  margin-top: auto;
+  color: #c0392b;
+  font-size: 18px;
+}
+
+.btn-logout {
+  background: none;
+  border: none;
+  color: #ffffff; /* verde corporativo */
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 8px;
+}
+
+.btn-logout:hover {
+  text-decoration: underline;
+}
+
+
 .visor-overlay {
   position: fixed;
   inset: 0;
@@ -974,4 +995,3 @@ body.login {
   display: block;
   margin: 0 auto 20px;
 }
-
