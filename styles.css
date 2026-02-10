@@ -995,3 +995,14 @@ body.login {
   display: block;
   margin: 0 auto 20px;
 }
+
+.plano-link {
+  color: #1f7f5c;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.plano-link:hover {
+  opacity: 0.8;
+}
