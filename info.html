@@ -34,18 +34,30 @@
     Ver modelo 3D (BIM Construction Cloud)
   </a>
 
-    <h3>Video del proceso constructivo</h3>
-
-    <div class="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/iTOyX_mgHiM?si=NSudiY6ge5Z-Uj4E"
-            title="Proceso constructivo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+  <h3>Informe de cantidades</h3>
+  <div id="cardInforme" class="card-recomendacion">
+    <div class="preview">
+      <canvas id="pdfPreviewInfo"></canvas>
     </div>
+    <div class="info">
+      <h4>Informe de cantidades</h4>
+      <button id="btnVerInforme">Ver PDF</button>
+    </div>
+  </div>
+
+  <div id="visorOverlayInfo" class="visor-overlay" style="display:none;">
+    <div class="visor-header">
+      <span id="visorTituloInfo">Informe de cantidades</span>
+      <button onclick="cerrarVisorInfo()">✕</button>
+    </div>
+    <div class="visor-body">
+      <div id="pdfCanvasContainerInfo"></div>
+    </div>
+  </div>
+   
 </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 
 <script src="js/info.js"></script>
 
@@ -71,5 +83,4 @@
 </nav>
 
 </html>
-
 

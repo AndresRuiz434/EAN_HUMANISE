@@ -1,3 +1,10 @@
+/* ==========================================
+   Página: Elementos
+   Depende de: data/datos.json
+   Uso: Visualización de elementos estructurales (vigas, muros, columnas, losas)
+========================================== */
+
+
 /* =====================================================
    CONFIGURACIÓN Y VARIABLES GLOBALES
 ===================================================== */
@@ -7,12 +14,14 @@ const CAMPOS = {
     id: "ID Columna",
     seccion: "Sección",
     plano: "Plano",
+    cantidad: "Cantidad",
   },
   muros: {
     id: "ID Muro",
     espesor: "Espesor (m)",
     longitud: "Longitud (m)",
     plano: "Plano",
+    cantidad: "Cantidad",
   },
   vigas: {
     id: "ID Viga",
@@ -69,6 +78,11 @@ fetch("data/datos.json")
 
     cargarLista(elementos);
 
+    if (tipo === "columnas" || tipo === "muros") {
+      selectElemento.value = "TODAS";
+      mostrarResumenCapitulo();
+    }
+
     renderGraficaResistenciaPorPiso(DATA[tipo]);
 
     const selectPiso = document.getElementById("selectPiso");
@@ -114,6 +128,11 @@ const selectElemento = document.getElementById("selectElemento");
 selectElemento.addEventListener("change", e => {
   const index = e.target.value;
 
+  if (e.target.value === "TODAS") {
+    mostrarResumenCapitulo();
+    return;
+  }
+
   // Sin selección
   if (index === "") {
     detalle.innerHTML = "";
@@ -148,12 +167,19 @@ function cargarLista() {
     return;
   }
 
-  // ===== RESTO =====
+  // ===== LIMPIAR SELECT =====
   selectElemento.innerHTML =
     `<option value="">Seleccione un ${tipo.slice(0, -1)}</option>`;
 
+  // ===== AGREGAR TODAS (solo columnas y muros) =====
+  if (tipo === "columnas" || tipo === "muros") {
+    selectElemento.innerHTML +=
+      `<option value="TODAS">Todas</option>`;
+  }
+
+  // ===== AGREGAR ELEMENTOS =====
   elementos.forEach((el, i) => {
-    const nombre = el.id || el["ID Columna"] || el["ID Muro"] || el["ID Viga"];
+    const nombre = el.id;
     const piso = el.piso ? ` (${el.piso})` : "";
 
     const opt = document.createElement("option");
@@ -204,23 +230,14 @@ function seleccionarElemento(el) {
         </div>
 
         <div class="separador"></div>
-
-        <div class="fila">
-          <span class="label">Cuantía (kg/m³)</span>
-          <span class="valor">${(el.peso / el.volumen).toFixed(1)}</span>
-        </div>
-
-        <div class="fila">
-          <span class="label">Cuantía (kg/m²)</span>
-          <span class="valor">${(el.peso / el.area).toFixed(1)}</span>
-        </div>
-
-        <div class="fila">
-          <span class="label">Consumo (m³/m²)</span>
-          <span class="valor">${(el.volumen / el.area).toFixed(3)}</span>
-        </div>
-      </div>
     `;
+
+    // Crear contenedor comparativo
+    const comparativoDiv = document.createElement("div");
+    comparativoDiv.id = "bloqueComparativo";
+    detalle.appendChild(comparativoDiv);
+
+    mostrarComparativoEntrepiso(el.piso);
 
     renderGrafica();
     return; 
@@ -263,26 +280,32 @@ function seleccionarElemento(el) {
       <div class="separador"></div>
 
       <div class="fila">
-        <span class="label">Volumen piso seleccionado (m³)</span>
+        <span class="label" id="labelVolumenPiso">Volumen (m³)</span>
         <span class="valor" id="kpiVolumen">—</span>
       </div>
 
-      <div class="fila">
-        <span class="label">Acero total (kg)</span>
-        <span class="valor" id="kpiPeso">—</span>
-      </div>
+      ${tipo !== "vigas" ? `
+        <div class="fila">
+          <span class="label">Acero total (kg)</span>
+          <span class="valor" id="kpiPeso">—</span>
+        </div>
 
-      <div class="fila">
-        <span class="label">Cuantía promedio(kg/m³)</span>
-        <span class="valor" id="kpiCuantia">—</span>
-      </div>
+        <div class="fila">
+          <span class="label">Cuantía promedio (kg/m³)</span>
+          <span class="valor" id="kpiCuantia">—</span>
+        </div>
+      ` : ""}
 
-      <div class="fila">
-        <span class="label">Comparación</span>
-        <span class="valor" id="kpiComparacion">—</span>
-      </div>
     </div>
   `;
+
+  // Crear contenedor comparativo vacío
+  const comparativoDiv = document.createElement("div");
+  comparativoDiv.id = "bloqueComparativo";
+  detalle.appendChild(comparativoDiv);
+
+  const pisoSel = el.piso;
+  mostrarComparativoEntrepiso(pisoSel);
 
   renderGrafica();
 
@@ -311,6 +334,92 @@ actualizarKPIs(registros, piso);
 }
 
   actualizarKPIs(registros, piso);
+  mostrarComparativo(el, piso);
+}
+
+function mostrarComparativo(el, pisoSeleccionado) {
+
+  if (tipo !== "columnas" && tipo !== "muros") return;
+
+  const id = el.id;
+
+  const todosElemento = DATA[tipo].filter(e => e.id === id);
+
+  const regsElemento = pisoSeleccionado === "TOTAL"
+    ? todosElemento
+    : todosElemento.filter(e => e.piso === pisoSeleccionado);
+
+  const volumenElemento = regsElemento.reduce(
+    (s, e) => s + (Number(e.volumen) || 0), 0
+  );
+
+  const aceroElemento = Number(
+    todosElemento.find(e => e.peso && Number(e.peso) > 0)?.peso || 0
+  );
+
+  const regsCapitulo = pisoSeleccionado === "TOTAL"
+    ? DATA[tipo]
+    : DATA[tipo].filter(e => e.piso === pisoSeleccionado);
+
+  const volumenCapitulo = regsCapitulo.reduce(
+    (s, e) => s + (Number(e.volumen) || 0), 0
+  );
+
+  const aceroCapitulo = DATA[tipo].reduce(
+    (s, e) => s + (Number(e.peso) || 0), 0
+  );
+
+  const partVol = volumenCapitulo > 0
+    ? (volumenElemento / volumenCapitulo) * 100
+    : 0;
+
+  const partAcero = aceroCapitulo > 0
+    ? (aceroElemento / aceroCapitulo) * 100
+    : 0;
+
+  const bloque = document.getElementById("bloqueComparativo");
+  if (!bloque) return;
+
+  bloque.innerHTML = `
+    <div class="card-detalle" style="margin-top:20px">
+      <h4>Comparación Elemento vs Total ${tipo}</h4>
+
+      <table style="width:100%; border-collapse: collapse; text-align:center;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Concepto</th>
+            <th>Elemento</th>
+            <th>Capítulo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left;">Volumen (m³)</td>
+            <td>${volumenElemento.toFixed(2)}</td>
+            <td>${volumenCapitulo.toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td style="text-align:left;">Acero (kg)</td>
+            <td>${aceroElemento.toFixed(1)}</td>
+            <td>${aceroCapitulo.toFixed(1)}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="separador"></div>
+
+      <div class="fila">
+        <span class="label">Participación volumen</span>
+        <span class="valor">${partVol.toFixed(1)} %</span>
+      </div>
+
+      <div class="fila">
+        <span class="label">Participación acero</span>
+        <span class="valor">${partAcero.toFixed(1)} %</span>
+      </div>
+
+    </div>
+  `;
 }
 
 /* =====================================================
@@ -322,6 +431,32 @@ function actualizarKPIs(registrosElemento, pisoSeleccionado) {
   let volumenTotal = 0;   // para cuantía
   let volumenPiso = 0;    // para mostrar
   let acero = 0;
+
+  const labelVol = document.getElementById("labelVolumenPiso");
+
+  if (labelVol) {
+
+    if (tipo === "vigas") {
+
+      // En vigas siempre fijo
+      labelVol.textContent = "Volumen (m³)";
+
+    } else {
+
+      if (pisoSeleccionado === "TOTAL") {
+        labelVol.textContent = "Volumen todos los pisos (m³)";
+      } else {
+
+        if (pisoSeleccionado.toLowerCase().includes("piso")) {
+          labelVol.textContent = `Volumen ${pisoSeleccionado} (m³)`;
+        } else {
+          labelVol.textContent = `Volumen Piso ${pisoSeleccionado} (m³)`;
+        }
+
+      }
+
+    }
+  }
 
   if (tipo === "vigas") {
 
@@ -377,45 +512,6 @@ function actualizarKPIs(registrosElemento, pisoSeleccionado) {
   document.getElementById("kpiCuantia").textContent =
     cuantia > 0 ? cuantia.toFixed(0) + " kg/m³" : "—";
 
-  let totalPesoProyecto = 0;
-  let totalVolProyecto = 0;
-
-  if (tipo === "vigas") {
-
-    const pisos = [...new Set(DATA.vigas.map(v => v.piso))];
-
-    totalPesoProyecto = pisos.reduce(
-      (s, p) => s + obtenerAceroTotalVigasPorPiso(p), 0
-    );
-
-    totalVolProyecto = DATA.vigas.reduce(
-      (s, v) => s + (Number(v.volumen) || 0), 0
-    );
-
-  } else {
-
-    totalPesoProyecto = DATA[tipo].reduce(
-      (s, e) => s + (Number(e.peso) || 0), 0
-    );
-
-    totalVolProyecto = DATA[tipo].reduce(
-      (s, e) => s + (Number(e.volumen) || 0), 0
-    );
-  }
-
-  const prom = totalVolProyecto > 0
-    ? totalPesoProyecto / totalVolProyecto
-    : 0;
-
-  const diff = prom > 0 ? ((cuantia - prom) / prom) * 100 : 0;
-
-  let txt = diff.toFixed(0) + "%";
-  if (diff > 15) txt = "🔴 " + txt;
-  else if (diff > 5) txt = "🟠 " + txt;
-  else txt = "🟢 " + txt;
-
-  document.getElementById("kpiComparacion").textContent =
-    cuantia > 0 ? txt : "—";
 }
 
 
@@ -639,6 +735,132 @@ selectPiso?.addEventListener("change", () => {
    HELPERS / UTILIDADES
 ===================================================== */
 
+function mostrarResumenCapitulo() {
+
+  const resumen = DATA.capitulos.find(c =>
+    c.capitulo.toLowerCase() === tipo
+  );
+
+  if (!resumen) {
+    detalle.innerHTML = "<p>No hay datos de capítulo</p>";
+    return;
+  }
+
+  const cantidad = DATA[tipo].length;
+
+  detalle.innerHTML = `
+    <h3>TODAS LAS ${tipo.toUpperCase()}</h3>
+
+    <div class="card-detalle">
+
+      <div class="fila">
+        <span class="label">Volumen total</span>
+        <span class="valor">${resumen.volumen.toFixed(2)} m³</span>
+      </div>
+
+      <div class="fila">
+        <span class="label">Acero total</span>
+        <span class="valor">${resumen.peso.toFixed(1)} kg</span>
+      </div>
+
+      <div class="separador"></div>
+
+      <div class="fila">
+        <span class="label">Consumo de concreto promedio (m³/m²)</span>
+        <span class="valor">${resumen.consumo.toFixed(3)}</span>
+      </div>
+
+      <div class="fila">
+        <span class="label">Cuantía promedio por área(kg/m²)</span>
+        <span class="valor">${resumen.cuantiaArea.toFixed(1)}</span>
+      </div>
+
+      <div class="fila">
+        <span class="label">Cuantía promedio volumétrica (kg/m³)</span>
+        <span class="valor">${resumen.cuantiaVol.toFixed(0)}</span>
+      </div>
+
+    </div>
+  `;
+
+  elementoSeleccionado = null;
+
+  if (chart) chart.destroy();
+}
+
+function mostrarComparativoEntrepiso(pisoSeleccionado) {
+
+  if (tipo !== "losas") return;
+  if (!pisoSeleccionado || pisoSeleccionado === "TOTAL") return;
+
+  // Extraer número del piso (ej: "Piso 2" -> "2")
+  const numeroPiso = pisoSeleccionado.toString().match(/\d+/)?.[0];
+
+  if (!numeroPiso) return;
+
+  const nombreVigas = `vigas piso ${numeroPiso}`.toLowerCase();
+  const nombreLosas = `losa piso ${numeroPiso}`.toLowerCase();
+
+  const capVigas = DATA.capitulos.find(c =>
+    c.capitulo.toLowerCase() === nombreVigas
+  );
+
+  const capLosas = DATA.capitulos.find(c =>
+    c.capitulo.toLowerCase() === nombreLosas
+  );
+
+  if (!capVigas || !capLosas) {
+    console.warn("No se encontraron capítulos:", nombreVigas, nombreLosas);
+    return;
+  }
+
+  const bloque = document.getElementById("bloqueComparativo");
+  if (!bloque) return;
+
+  bloque.innerHTML = `
+    <div class="card-detalle" style="margin-top:20px">
+      <h4>Comparación estructural – Piso ${numeroPiso}</h4>
+
+      <table style="width:100%; border-collapse: collapse; text-align:center;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Concepto</th>
+            <th>Vigas y viguetas</th>
+            <th>Losa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left;">Volumen (m³)</td>
+            <td>${capVigas.volumen.toFixed(2)}</td>
+            <td>${capLosas.volumen.toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td style="text-align:left;">Peso refuerzo (kg)</td>
+            <td>${capVigas.peso.toFixed(1)}</td>
+            <td>${capLosas.peso.toFixed(1)}</td>
+          </tr>
+          <tr>
+            <td style="text-align:left;">Cuantía (kg/m³)</td>
+            <td>${capVigas.cuantiaVol.toFixed(0)}</td>
+            <td>${capLosas.cuantiaVol.toFixed(0)}</td>
+          </tr>
+          <tr>
+            <td style="text-align:left;">Cuantía (kg/m²)</td>
+            <td>${capVigas.cuantiaArea.toFixed(1)}</td>
+            <td>${capLosas.cuantiaArea.toFixed(1)}</td>
+          </tr>
+          <tr>
+            <td style="text-align:left;">Consumo (m³/m²)</td>
+            <td>${capVigas.consumo.toFixed(3)}</td>
+            <td>${capLosas.consumo.toFixed(3)}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
 function obtenerTotalProyectoPorTipo(campo) {
 
   if (tipo === "vigas") {
@@ -771,3 +993,7 @@ document.addEventListener("click", e => {
   }
 });
 
+const rol = localStorage.getItem("rol");
+if (!rol) {
+  window.location.href = "index.html";
+}

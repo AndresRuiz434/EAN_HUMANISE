@@ -1,3 +1,9 @@
+/* ==========================================
+   Página: Parámetros de diseño
+   Depende de: data/datos.json
+   Uso: Información básica del proyecto, materiales y contacto
+========================================== */
+
 document.addEventListener("DOMContentLoaded", () => {
   fetch("data/datos.json")
     .then(res => res.json())
@@ -8,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       configurarWhatsapp(data.info);
       configurarCorreo(data.info);
       configurarCorreo2(data.info);
+      cargarCliente(data.info); 
     })
     .catch(err => console.error("Error cargando datos:", err));
 });
@@ -30,6 +37,34 @@ function cargarParametros(parametros) {
     tr.innerHTML = `
       <td>${p.caracteristica}</td>
       <td>${p.valor}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function cargarCliente(info) {
+  const tbody = document.querySelector("#tablaCliente tbody");
+  if (!tbody) return;
+
+  tbody.innerHTML = "";
+
+  const datosCliente = [
+    { label: "Aliado", valor: info.aliado },
+    { label: "Firma Arquitectura", valor: info.firmaArquitectura },
+    { label: "Ingeniero de suelos", valor: info.ingenieroSuelos },
+    { label: "Gerente del proyecto", valor: info.gerenteProyecto },
+    { label: "Director del proyecto", valor: info.directorProyecto },
+    { label: "Control documental", valor: info.controlDocumental },
+    { label: "Avance Modelación BIM", valor: info.avanceBIM }
+  ];
+
+  datosCliente.forEach(d => {
+    if (!d.valor) return;
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${d.label}</td>
+      <td>${d.valor}</td>
     `;
     tbody.appendChild(tr);
   });
@@ -114,3 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+const rol = localStorage.getItem("rol");
+if (!rol) {
+  window.location.href = "index.html";
+}

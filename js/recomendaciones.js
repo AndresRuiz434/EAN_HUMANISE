@@ -1,4 +1,9 @@
-let RECOMEN = [];
+/* ==========================================
+   Página: Recomendaciones
+   Depende de: data/datos.json y carpeta recomendaciones/
+   Uso: Documentos de recomendacion de aditivos, resinas, anclajes y empalmes
+========================================== */
+
 
 fetch("data/datos.json")
   .then(res => res.json())
@@ -51,21 +56,6 @@ function renderPDFPreview(url, canvasId) {
   });
 }
 
-
-function mostrarDoc(r) {
-  document.getElementById("infoReco").innerHTML = `
-    <p><strong>Documento:</strong> ${r.documento}</p>
-  `;
-
-  document.getElementById("visorPDF").src =
-    "recomendaciones/" + r.pdf;
-}
-
-
-function abrirPDFCompleto() {
-  const pdf = document.getElementById("visorPDF").src;
-  if (pdf) window.open(pdf, "_blank");
-}
 
 async function verPDF(pdf, titulo) {
   const overlay = document.getElementById("visorOverlay");
@@ -130,3 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+const rol = localStorage.getItem("rol");
+if (!rol) {
+  window.location.href = "index.html";
+}

@@ -1,3 +1,8 @@
+/* ==========================================
+   Página: Planos
+   Depende de: data/datos.json y carpeta de planos/
+   Uso: Visualización en pdf de todos los planos cargados 
+========================================== */
 let PLANOS = [];
 
 fetch("data/datos.json")
@@ -111,4 +116,9 @@ document.addEventListener("DOMContentLoaded", () => {
 function obtenerPlanoDesdeURL() {
   const params = new URLSearchParams(window.location.search);
   return params.get("plano");
+}
+
+const rol = localStorage.getItem("rol");
+if (!rol) {
+  window.location.href = "index.html";
 }

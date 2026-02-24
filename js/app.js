@@ -1,3 +1,10 @@
+/* ==========================================
+   Página: Menú principal
+   Depende de: data/datos.json
+   Uso: Visualización del menú principal para ambos roles, admin y cliente
+========================================== */
+
+
 let DATA = {};
 let elementos = [];
 
@@ -186,7 +193,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-
-
-
+const rol = localStorage.getItem("rol");
+if (!rol) {
+  window.location.href = "index.html";
+}
 
