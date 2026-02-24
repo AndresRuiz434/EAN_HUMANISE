@@ -4,6 +4,11 @@
     "bim": "0.6",
     "telefono": "3157106081",
     "correo": "marcelopaez@aycardiestructural.com",
+    "aliado": "Circular Lab",
+    "firmaArquitectura": "Circular Lab",
+    "ingenieroSuelos": "Alfonso Uribe S. y Cia. S.A.",
+    "gerenteProyecto": "Luis Enrique Aycardi",
+    "directorProyecto": "Marcelo Paez",
     "progresoDibujo": 60,
     "progresoDiseno": 76.92
   },
@@ -5430,6 +5435,242 @@
       "resistencia": "4200"
     }
   ],
+  "capitulos": [
+    {
+      "capitulo": "",
+      "volumen": 0,
+      "peso": 0,
+      "area": 0,
+      "cuantiaVol": 0,
+      "cuantiaArea": 0,
+      "consumo": 0
+    },
+    {
+      "capitulo": "Capítulo",
+      "volumen": null,
+      "peso": null,
+      "area": null,
+      "cuantiaVol": null,
+      "cuantiaArea": null,
+      "consumo": null
+    },
+    {
+      "capitulo": "Pilotes",
+      "volumen": 1653.1,
+      "peso": 153491,
+      "area": 1050.45,
+      "cuantiaVol": 92.9,
+      "cuantiaArea": 146.1,
+      "consumo": 1574
+    },
+    {
+      "capitulo": "Muro pantalla",
+      "volumen": 284.5,
+      "peso": 39128,
+      "area": 1050.45,
+      "cuantiaVol": 137.5,
+      "cuantiaArea": 37.2,
+      "consumo": 0.271
+    },
+    {
+      "capitulo": "Losa cimentación",
+      "volumen": 269.2,
+      "peso": 30785,
+      "area": 1050.45,
+      "cuantiaVol": 114.4,
+      "cuantiaArea": 29.3,
+      "consumo": 0.256
+    },
+    {
+      "capitulo": "Vigas cimentación",
+      "volumen": 444.7,
+      "peso": 64144,
+      "area": 1050.45,
+      "cuantiaVol": 144.2,
+      "cuantiaArea": 61.1,
+      "consumo": 0.423
+    },
+    {
+      "capitulo": "Columnas",
+      "volumen": 189.1,
+      "peso": 63576,
+      "area": 3067,
+      "cuantiaVol": 336.2,
+      "cuantiaArea": 20.7,
+      "consumo": 0.062
+    },
+    {
+      "capitulo": "Muros",
+      "volumen": 600.9,
+      "peso": 78192,
+      "area": 3067,
+      "cuantiaVol": 130.1,
+      "cuantiaArea": 25.5,
+      "consumo": 0.196
+    },
+    {
+      "capitulo": "Vigas Piso 1",
+      "volumen": 239,
+      "peso": 37106,
+      "area": 1048.73,
+      "cuantiaVol": 155.3,
+      "cuantiaArea": 35.4,
+      "consumo": 0.228
+    },
+    {
+      "capitulo": "Losa Piso 1",
+      "volumen": 197.7,
+      "peso": 13263,
+      "area": 1048.73,
+      "cuantiaVol": 67.1,
+      "cuantiaArea": 12.6,
+      "consumo": 0.189
+    },
+    {
+      "capitulo": "Vigas Piso 2",
+      "volumen": 114.08,
+      "peso": 20397,
+      "area": 603,
+      "cuantiaVol": 178.8,
+      "cuantiaArea": 33.8,
+      "consumo": 0.189
+    },
+    {
+      "capitulo": "Losa Piso 2",
+      "volumen": 144.7,
+      "peso": 10125,
+      "area": 603,
+      "cuantiaVol": 70,
+      "cuantiaArea": 16.8,
+      "consumo": 0.24
+    },
+    {
+      "capitulo": "Vigas Piso 3",
+      "volumen": 127.5,
+      "peso": 20384,
+      "area": 594,
+      "cuantiaVol": 159.9,
+      "cuantiaArea": 34.3,
+      "consumo": 0.215
+    },
+    {
+      "capitulo": "Losa Piso 3",
+      "volumen": 96.8,
+      "peso": 7072,
+      "area": 594,
+      "cuantiaVol": 73.1,
+      "cuantiaArea": 11.9,
+      "consumo": 0.163
+    },
+    {
+      "capitulo": "Vigas Piso 4",
+      "volumen": 129.2,
+      "peso": 20995,
+      "area": 610,
+      "cuantiaVol": 162.5,
+      "cuantiaArea": 34.4,
+      "consumo": 0.212
+    },
+    {
+      "capitulo": "Losa Piso 4",
+      "volumen": 99.7,
+      "peso": 7357,
+      "area": 610,
+      "cuantiaVol": 73.8,
+      "cuantiaArea": 12.1,
+      "consumo": 0.163
+    },
+    {
+      "capitulo": "Vigas Piso 5",
+      "volumen": 127,
+      "peso": 20212,
+      "area": 596,
+      "cuantiaVol": 159.1,
+      "cuantiaArea": 33.9,
+      "consumo": 0.213
+    },
+    {
+      "capitulo": "Losa Piso 5",
+      "volumen": 96.4,
+      "peso": 7130,
+      "area": 596,
+      "cuantiaVol": 74,
+      "cuantiaArea": 12,
+      "consumo": 0.162
+    },
+    {
+      "capitulo": "Vigas Piso 6",
+      "volumen": 126.5,
+      "peso": 19636,
+      "area": 592,
+      "cuantiaVol": 155.2,
+      "cuantiaArea": 33.2,
+      "consumo": 0.214
+    },
+    {
+      "capitulo": "Losa Piso 6",
+      "volumen": 95.4,
+      "peso": 7066,
+      "area": 592,
+      "cuantiaVol": 74.1,
+      "cuantiaArea": 11.9,
+      "consumo": 0.161
+    },
+    {
+      "capitulo": "Vigas Piso 7",
+      "volumen": 126.4,
+      "peso": 18798,
+      "area": 598,
+      "cuantiaVol": 148.7,
+      "cuantiaArea": 31.4,
+      "consumo": 0.211
+    },
+    {
+      "capitulo": "Losa Piso 7",
+      "volumen": 96.9,
+      "peso": 6881,
+      "area": 598,
+      "cuantiaVol": 71,
+      "cuantiaArea": 11.5,
+      "consumo": 0.162
+    },
+    {
+      "capitulo": "Vigas Cubierta",
+      "volumen": 126.6,
+      "peso": 18511,
+      "area": 621,
+      "cuantiaVol": 146.2,
+      "cuantiaArea": 29.8,
+      "consumo": 0.204
+    },
+    {
+      "capitulo": "Losa Cubierta",
+      "volumen": 143.6,
+      "peso": 9919,
+      "area": 621,
+      "cuantiaVol": 69.1,
+      "cuantiaArea": 16,
+      "consumo": 0.231
+    },
+    {
+      "capitulo": "Vigas Cub Maquinas",
+      "volumen": 8.1,
+      "peso": 1002,
+      "area": 76,
+      "cuantiaVol": 123.7,
+      "cuantiaArea": 13.2,
+      "consumo": 0.107
+    },
+    {
+      "capitulo": "Cubierta maquinas",
+      "volumen": 19.2,
+      "peso": 1573,
+      "area": 76,
+      "cuantiaVol": 81.9,
+      "cuantiaArea": 20.7,
+      "consumo": 0.253
+    }
+  ],
   "recomendaciones": [
     {
       "documento": "Documento",
@@ -5451,5 +5692,8 @@
       "documento": "Empalmes mecánicos",
       "pdf": "Empalmes mecánicos.pdf"
     }
-  ]
+  ],
+  "infoAdicional": {
+  "pdf": "AE-0466 CANTIDADES.pdf"
+}
 }
