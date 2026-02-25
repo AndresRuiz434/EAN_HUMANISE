@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elementos</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <!-- Flecha atrás -->
+   <div class="header-left">
+    <button class="back" onclick="history.back()">←</button>
+
+    <button class="icon-btn" onclick="window.location.href='app.html'" title="Inicio">🏠</button>
+  </div>
+  <!-- Títulos -->
+  <div class="header-center">
+    <h1 id="tituloProyecto"></h1>
+    <h2 id="tituloSeccion"></h2>
+  </div>
+
+  <!-- Logo -->
+  <div class="header-right">
+    <img src="assets/img/LogoB.png" class="logo">
+  </div>
+</header>
+
+
+<main class="main-content">
+<!-- BUSCADOR -->
+<div class="buscador">
+  <input
+    type="text"
+    id="buscador"
+    placeholder="Buscar por ID, sección o plano..."
+  />
+</div>
+
+<!-- Selector Piso (solo columnas y muros) -->
+<div class="selector-piso" id="bloquePiso" style="display:none;">
+  <select id="selectPiso">
+    <option value="TOTAL">Todos los pisos</option>
+  </select>
+</div>
+
+
+<!--Selector-->  
+<div class="selector-elemento">
+  <select id="selectElemento">
+    <option value="">Seleccione un elemento</option>
+  </select>
+</div>
+
+
+<!-- DETALLE -->
+<div class="detalle-grafica">
+
+  <!-- Detalles -->
+  <div id="detalle" class="detalle">
+    <p class="muted">Seleccione un elemento</p>
+  </div>
+
+  <!-- Gráfica resistencia por piso -->
+  <div class="grafica-resistencia">
+
+    <div class="grafica-header">
+     Distribución de resistencias
+    </div>
+
+  <canvas id="graficaPisos"></canvas>
+
+  </div>
+</div>
+
+
+<!-- SELECTOR GRAFICA -->
+<div class="selector-grafica">
+  <select id="tipoGrafica">
+    <option value="volumen">Volumen vs proyecto</option>
+    <option value="peso">Peso refuerzo vs proyecto</option>
+  </select>
+</div>
+
+<!-- GRAFICA -->
+<canvas id="grafica" height="220"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script src="js/cimentacion.js"></script>
+
+<script src="js/login.js"></script>
+
+
+</main>
+
+<footer class="marca-footer">
+  Aycardi Estructural © 2026
+</footer>
+
+</body>
+
+<nav class="side-menu">
+  <a href="parametros.html" title="Parámetros">📋</a>
+  <a href="cimentacion.html?tipo=contencion" title="Contencion"><img src="assets/img/ICONOS/IcoCont.png" width="20" height="30"></a>
+  <a href="cimentacion.html?tipo=vigas" title="VigasCim"><img src="assets/img/ICONOS/IcoVigCim.png" width="20" height="30"></a>
+  <a href="cimentacion.html?tipo=losas" title="LosaCim"><img src="assets/img/ICONOS/IcoLosaCim.png" width="20" height="30"></a>
+  <a href="cimentacion.html?tipo=pilotes" title="Pilotes"><img src="assets/img/ICONOS/IcoPilote.png" width="20" height="30"></a>
+  <a href="planos.html" title="Planos"><img src="assets/img/ICONOS/IcoPlano.png" width="20" height="30"></a>
+  <a href="info.html" title="Información">ℹ️</a>
+  <a href="recomendaciones.html" title="Recomendaciones"><img src="assets/img/ICONOS/IcoRecom.png" width="20" height="30"></a>
+
+</nav>
+
+</html>

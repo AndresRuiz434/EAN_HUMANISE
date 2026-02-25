@@ -73,9 +73,17 @@ fetch("data/datos.json")
       return;
     }
 
-    elementos = DATA[tipo];
-    tituloSeccion.textContent = tipo.toUpperCase();
+    if (tipo === "vigas" || tipo === "losas") {
 
+      elementos = DATA[tipo].filter(e =>
+        !e.piso ||
+        e.piso.toString().toLowerCase() !== "cimentación"
+      );
+
+    } else {
+      elementos = DATA[tipo];
+    }
+    
     cargarLista(elementos);
 
     if (tipo === "columnas" || tipo === "muros") {
@@ -279,12 +287,13 @@ function seleccionarElemento(el) {
 
       <div class="separador"></div>
 
+      ${tipo !== "vigas" ? `
+
       <div class="fila">
-        <span class="label" id="labelVolumenPiso">Volumen (m³)</span>
+        <span class="label" id="labelVolumenPiso">Volumen total(m³)</span>
         <span class="valor" id="kpiVolumen">—</span>
       </div>
 
-      ${tipo !== "vigas" ? `
         <div class="fila">
           <span class="label">Acero total (kg)</span>
           <span class="valor" id="kpiPeso">—</span>
@@ -382,7 +391,7 @@ function mostrarComparativo(el, pisoSeleccionado) {
 
   bloque.innerHTML = `
     <div class="card-detalle" style="margin-top:20px">
-      <h4>Comparación Elemento vs Total ${tipo}</h4>
+      <h4>Comparación Elemento vs Total ${tipo} en Piso ${pisoSeleccionado} </h4>
 
       <table style="width:100%; border-collapse: collapse; text-align:center;">
         <thead>
@@ -819,7 +828,7 @@ function mostrarComparativoEntrepiso(pisoSeleccionado) {
 
   bloque.innerHTML = `
     <div class="card-detalle" style="margin-top:20px">
-      <h4>Comparación estructural – Piso ${numeroPiso}</h4>
+      <h4>Comparación Entrepiso – Piso ${numeroPiso}</h4>
 
       <table style="width:100%; border-collapse: collapse; text-align:center;">
         <thead>
