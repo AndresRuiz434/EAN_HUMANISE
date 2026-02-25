@@ -1136,17 +1136,6 @@
   ],
   "pilotes": [
     {
-      "id": "ID PILOTE",
-      "seccion": "Sección",
-      "cantidad": null,
-      "prof": null,
-      "longitud": null,
-      "plano": "Plano",
-      "resistencia": null,
-      "volumen": null,
-      "peso": null
-    },
-    {
       "id": "PTipo 1",
       "seccion": "Ø 0.8 m",
       "cantidad": 8,
@@ -1324,16 +1313,6 @@
     }
   ],
   "columnas": [
-    {
-      "id": "ID COLUMNA",
-      "seccion": "Sección",
-      "cantidad": null,
-      "piso": "Piso",
-      "resistencia": null,
-      "plano": "Plano",
-      "volumen": null,
-      "peso": null
-    },
     {
       "id": "Columna 03",
       "seccion": "S=70x70",
@@ -2197,17 +2176,6 @@
   ],
   "muros": [
     {
-      "id": "ID MURO",
-      "espesor": null,
-      "longitud": null,
-      "plano": "Plano",
-      "cantidad": null,
-      "piso": "Piso",
-      "resistencia": null,
-      "volumen": null,
-      "peso": null
-    },
-    {
       "id": "M1",
       "espesor": 0.3,
       "longitud": 8.32,
@@ -2561,16 +2529,6 @@
     }
   ],
   "vigas": [
-    {
-      "id": "ID VIGA",
-      "piso": "Piso",
-      "seccion": "Sección",
-      "plano": "Plano",
-      "cantidad": null,
-      "resistencia": null,
-      "volumen": null,
-      "peso": null
-    },
     {
       "id": "201",
       "piso": "Cimentación",
@@ -5424,14 +5382,6 @@
   ],
   "losas": [
     {
-      "piso": "Piso",
-      "plano": "Plano",
-      "resistencia": null,
-      "area": null,
-      "volumen": null,
-      "peso": null
-    },
-    {
       "piso": "Cimentación",
       "plano": "EAN-0519-AES-01-EST-CIM-PL-103-06.00",
       "resistencia": 35,
@@ -5861,17 +5811,6 @@
     }
   ],
   "contencion": [
-    {
-      "id": "ID",
-      "espesor": null,
-      "longitud": null,
-      "altura": null,
-      "plano": "Plano",
-      "cantidad": null,
-      "resistencia": null,
-      "volumen": null,
-      "peso": null
-    },
     {
       "id": "Pantalla Tipo 1",
       "espesor": 0.4,
