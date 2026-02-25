@@ -123,7 +123,7 @@ elementos = [...elementosOriginales];
         mostrarResumenCapitulo();
     }
 
-    if (tipo === "vigas") {
+    if (tipo === "vigas" || tipo === "losas") {
       renderGraficaResistenciaPorPiso(DATA[tipo]);
     }
 
@@ -296,12 +296,12 @@ function seleccionarElemento(el) {
       </div>
 
       <div class="fila">
-        <span class="label">Volumen Total</span>
+        <span class="label">Volumen total del elemento (m³)</span>
         <span class="valor">${el.volumen} m³</span>
       </div>
 
       <div class="fila">
-        <span class="label">Peso refuerzo</span>
+        <span class="label">Peso total de refuerzo del elemento (kg)</span>
         <span class="valor">${el.peso} kg</span>
       </div>
 
@@ -830,12 +830,12 @@ function mostrarResumenCapitulo() {
   const cantidad = DATA[tipo].length;
 
   detalle.innerHTML = `
-    <h3>TODOS LOS ${tipo.toUpperCase()}</h3>
+    <h3>Resumen general – ${tipo.toUpperCase()}</h3>
 
     <div class="card-detalle">
 
       <div class="fila">
-        <span class="label">Volumen total</span>
+        <span class="label">Volumen total del capítulo (${tipo}) (m³)</span>
         <span class="valor">${resumen.volumen.toFixed(2)} m³</span>
       </div>
 

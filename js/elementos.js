@@ -391,7 +391,7 @@ function mostrarComparativo(el, pisoSeleccionado) {
 
   bloque.innerHTML = `
     <div class="card-detalle" style="margin-top:20px">
-      <h4>Comparación Elemento vs Total ${tipo} en Piso ${pisoSeleccionado} </h4>
+      <h4>Comparación Elemento vs Total ${tipo} ${pisoSeleccionado !== "TOTAL" ? `– Piso ${pisoSeleccionado}` : "(todos los pisos)"} </h4>
 
       <table style="width:100%; border-collapse: collapse; text-align:center;">
         <thead>
@@ -447,21 +447,17 @@ function actualizarKPIs(registrosElemento, pisoSeleccionado) {
 
     if (tipo === "vigas") {
 
-      // En vigas siempre fijo
-      labelVol.textContent = "Volumen (m³)";
+      const piso = registrosElemento[0]?.piso || "";
+      labelVol.textContent = `Volumen total del elemento en ${piso} (m³)`;
 
     } else {
 
       if (pisoSeleccionado === "TOTAL") {
-        labelVol.textContent = "Volumen todos los pisos (m³)";
+        labelVol.textContent =
+          "Volumen total del elemento en todos los pisos (m³)";
       } else {
-
-        if (pisoSeleccionado.toLowerCase().includes("piso")) {
-          labelVol.textContent = `Volumen ${pisoSeleccionado} (m³)`;
-        } else {
-          labelVol.textContent = `Volumen Piso ${pisoSeleccionado} (m³)`;
-        }
-
+        labelVol.textContent =
+          `Volumen total del elemento en Piso ${pisoSeleccionado} (m³)`;
       }
 
     }
@@ -763,12 +759,12 @@ function mostrarResumenCapitulo() {
     <div class="card-detalle">
 
       <div class="fila">
-        <span class="label">Volumen total</span>
+        <span class="label">Volumen total del capítulo (${tipo}) (m³)</span>
         <span class="valor">${resumen.volumen.toFixed(2)} m³</span>
       </div>
 
       <div class="fila">
-        <span class="label">Acero total</span>
+        <span class="label">Peso total de refuerzo del elemento (kg)</span>
         <span class="valor">${resumen.peso.toFixed(1)} kg</span>
       </div>
 
